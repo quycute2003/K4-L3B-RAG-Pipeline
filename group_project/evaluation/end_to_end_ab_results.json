@@ -1,0 +1,931 @@
+{
+  "case_count": 16,
+  "top_k": 5,
+  "generator_model": "gpt-4o-mini",
+  "evaluator_model": "gpt-4o-mini",
+  "evaluator_embedding_model": "text-embedding-3-small",
+  "config_a": {
+    "name": "dense-only",
+    "metrics": {
+      "faithfulness": 0.9792,
+      "answer_relevancy": 0.6581,
+      "context_recall": 1.0,
+      "llm_context_precision_with_reference": 0.9186
+    },
+    "per_case": [
+      {
+        "id": "heritage-01",
+        "question": "Quần thể Di tích Cố đô Huế được UNESCO công nhận là Di sản văn hóa thế giới vào ngày nào và theo những tiêu chí nào?",
+        "expected_answer": "Quần thể Di tích Cố đô Huế được UNESCO công nhận ngày 11 tháng 12 năm 1993 theo tiêu chí (iii) và (iv).",
+        "expected_context": "ngày 11 tháng 12 năm 1993 đã công nhận Khu Di tích cố đô Huế là Di sản văn hóa thế giới với tiêu chí (iii)",
+        "answer": "Quần thể Di tích Cố đô Huế được UNESCO công nhận là Di sản văn hóa thế giới vào ngày 11 tháng 12 năm 1993, với tiêu chí (iii) là \"Huế thể hiện là một bằng chứng nổi bật của quyền lực phong kiến Việt Nam đã mất\" và tiêu chí (iv) là \"Quần thể di tích Huế là một ví dụ nổi bật của một kinh đô phong kiến phương Đông\" [1].",
+        "contexts": [
+          "# Quần thể Di tích cố đô Huế\n\nHội nghị lần thứ 17 của Ủy ban Di sản Thế giới họp tại Cartagena (Colombia) ngày 11 tháng 12 năm 1993 đã công nhận Khu Di tích cố đô Huế là Di sản văn hóa thế giới với tiêu chí (iii): Huế thể hiện là một bằng chứng nổi bật của quyền lực phong kiến Việt Nam đã mất mà đỉnh cao của nó vào đầu thế kỷ XIX, và tiêu chuẩn (iv): Quần thể di tích Huế là một ví dụ nổi bật của một kinh đô phong kiến phương Đông.",
+          "Với những giá trị lịch sử, văn hóa và khoa học đặc biệt của di tích, Thủ tướng Chính phủ đã quyết định xếp hạng Di tích lịch sử và kiến trúc nghệ thuật Quần thể kiến trúc Cố đô Huế là di tích quốc gia đặc biệt (Quyết định số 1272/QĐ-TTg, ngày 12/08/2009).\n\n**Cảnh Toàn (Theo Hồ sơ xếp hạng di tích, tư liệu Cục Di sản văn hóa)**",
+          "Ngày nay, Huế trở thành một thành phố Festival tổ chức hai năm một lần. Huế là một di sản văn hóa độc đáo của Việt Nam và thế giới. Ngày 7 tháng 11 năm 2003, Âm nhạc cung đình Huế: Nhã nhạc (triều Nguyễn) đã được UNESCO ghi tên vào danh mục Các Kiệt tác Di sản phi vật thể của nhân loại.",
+          "# Thơ văn trên kiến trúc cung đình Huế\n\nNgày 19/5/2016, Ủy ban di sản ký ức thế giới vinh danh thơ văn trên kiến trúc cung đình Huế là di sản tư liệu thế giới thuộc khu vực Châu Á - Thái Bình Dương đã khẳng định giá trị nhiều mặt, xứng đáng được tôn vinh và bảo tồn bền vững di sản này ở Việt Nam và trên toàn thế giới.\n\n**1.** **Giá trị nổi bật của Di sản tư liệu**",
+          "và đáp ứng ít nhất một trong các tiêu chí quy định tại Điều 22 của Luật này.\n\n2. Di tích được UNESCO xem xét, công nhận là di sản thế giới bao gồm:\n\na) Di sản văn hóa thế giới là di tích tiêu biểu của Việt Nam có giá trị nổi bật\n\ntoàn cầu về văn hóa;\n\nb) Di sản thiên nhiên thế giới là di tích tiêu biểu của Việt Nam có giá trị nổi\n\nbật toàn cầu về thiên nhiên;\n\nc) Di sản thế giới hỗn hợp là di tích tiêu biểu của Việt Nam đáp ứng được"
+        ],
+        "source_ids": [
+          "news/article_01::chunk-0000",
+          "news/article_02::chunk-0012",
+          "news/article_01::chunk-0007",
+          "news/article_05::chunk-0000",
+          "legal/van_ban_hop_nhat_51_2026_luat_di_san_van_hoa::chunk-0117"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.5499248555736717,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.9999999999
+        }
+      },
+      {
+        "id": "heritage-02",
+        "question": "Ba vòng thành lồng vào nhau ở Huế gồm những gì?",
+        "expected_answer": "Ba vòng thành là Kinh thành Huế, Hoàng thành Huế và Tử cấm thành.",
+        "expected_context": "Đó là Kinh thành Huế, Hoàng thành Huế, Tử cấm thành, ba vòng thành lồng vào nhau",
+        "answer": "Ba vòng thành lồng vào nhau ở Huế gồm Kinh thành Huế, Hoàng thành Huế và Tử cấm thành Huế [1].",
+        "contexts": [
+          "Nằm giữa lòng Huế, bên bờ Bắc của sông Hương chảy xuyên qua từ Tây sang Đông, hệ thống kiến trúc biểu thị cho quyền uy của chế độ trung ương tập quyền Nguyễn vẫn đang sừng sững trước bao biến động của thời gian. Đó là Kinh thành Huế, Hoàng thành Huế, Tử cấm thành Huế, ba vòng thành lồng vào nhau được bố trí đăng đối trên một trục dọc xuyên suốt từ mặt Nam ra mặt Bắc.",
+          "*Kinh thành Huế:*được khởi công xây dựng từ năm 1805, hoàn thành năm 1832, nằm bên bờ Bắc của sông Hương, quay mặt về hướng Nam, gồm ba toà thành lồng vào nhau, được bố trí đăng đối trên một trục dọc, xuyên suốt từ mặt Nam ra mặt Bắc, xung quanh có 10 cửa chính và hệ thống vọng canh, hào nước…\n\n*Đại nội (Hoàng thành, Hoàng cung):* nằm giữa trục chính của Kinh thành Huế, bao gồm các khu vực chính như sau:\n\n- Khu vực phòng vệ gồm: hệ thống hồ Kim thủy (hào), tường bao bọc và 10 cây cầu.",
+          "Xuyên suốt cả ba tòa thành, con đường Thần đạo chạy từ bờ sông Hương mang trên mình những công trình kiến trúc quan yếu nhất của Kinh thành Huế: Nghinh Lương Đình, Phu Văn Lâu, Kỳ Đài, Ngọ Môn, điện Thái Hòa, điện Cần Chánh, điện Càn Thành, cung Khôn Thái, lầu Kiến Trung... Hai bên đường Thần đạo này là hàng trăm công trình kiến trúc lớn nhỏ bố trí cân đối đều đặn, đan xen cây cỏ, chập chờn khi ẩn khi hiện giữa những sắc màu thiên nhiên, luôn tạo cho con người một cảm giác nhẹ nhàng thanh thản",
+          "Về di sản kiến trúc của Cố đô Huế, có thể kể đến những di tích tiêu biểu sau: Kinh thành, Hoàng thành và Tử Cấm thành, hệ thống lăng tẩm của các vua Nguyễn, cung An Định, Trai cung, bến thuyền Cung đình, Trấn Bình đài, Trấn Hải thành, điện Hòn Chén, nhà bà Từ Cung, Văn miếu, Võ miếu, Hải Vân quan,…",
+          "Hoàng thành giới hạn bởi một vòng tường thành gần vuông mỗi chiều xấp xỉ 600m với 4 cổng ra vào mà độc đáo nhất thường được lấy làm biểu tượng của Cố đô: Ngọ Môn, chính là khu vực hành chính tối cao của triều đình Nguyễn. Bên trong Hoàng thành, hơi dịch về phía sau, là Tử cấm thành - nơi ăn ở sinh hoạt của Hoàng gia."
+        ],
+        "source_ids": [
+          "news/article_01::chunk-0002",
+          "news/article_02::chunk-0004",
+          "news/article_01::chunk-0004",
+          "news/article_02::chunk-0003",
+          "news/article_01::chunk-0003"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.8256105847496947,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.8874999999778125
+        }
+      },
+      {
+        "id": "heritage-03",
+        "question": "Ngọ Môn được xây dựng vào năm nào và có đặc điểm nào ở phía trên?",
+        "expected_answer": "Ngọ Môn được xây dựng vào năm Minh Mạng thứ 14 (1833); phía trên có lầu Ngũ Phụng.",
+        "expected_context": "Ngọ môn: là cổng chính phía Nam của Hoàng thành, được xây dựng vào năm Minh Mạng thứ 14 (1833), phía trên có lầu Ngũ Phụng",
+        "answer": "Ngọ Môn được xây dựng vào năm Minh Mạng thứ 14 (1833) và phía trên có lầu Ngũ Phụng, là nơi xưa kia triều đình tổ chức nghi lễ [5].",
+        "contexts": [
+          "Hoàng thành giới hạn bởi một vòng tường thành gần vuông mỗi chiều xấp xỉ 600m với 4 cổng ra vào mà độc đáo nhất thường được lấy làm biểu tượng của Cố đô: Ngọ Môn, chính là khu vực hành chính tối cao của triều đình Nguyễn. Bên trong Hoàng thành, hơi dịch về phía sau, là Tử cấm thành - nơi ăn ở sinh hoạt của Hoàng gia.",
+          "- Khu vực phủ Nội vụ gồm: nhà kho lưu giữ đồ quý, xưởng thủ công mỹ nghệ chế tạo đồ vàng, bạc, ngọc, ngà, gấm, vóc.\n\n- Khu vực vườn Cơ Hạ và điện Khâm Văn: là nơi học tập và chơi đùa của các Hoàng tử khi chưa xuất phủ.\n\n- Khu vực Tử Cấm Thành: là chốn cung cấm, dành riêng cho Vua và hoàng gia ăn ở, sinh hoạt.\n\n*Ngọ môn:* là cổng chính phía Nam của Hoàng thành, được xây dựng vào năm Minh Mạng thứ 14 (1833), phía trên có lầu Ngũ Phụng, là nơi xưa kia triều đình tổ chức nghi lễ.",
+          ". Các công trình kiến trúc từ Ngọ Môn, điện Thái Hòa, điện Cần Chánh, Triệu Miếu, Hưng Tổ Miếu, Thế Tổ Miếu, chùa Thiên Mụ… đều sử dụng văn thơ để trang trí trên liên ba, đố bản, cổ diềm ở cả nội và ngoại thất công trình. Và cách trang trí 1 ô thơ hoặc 1 đại tự đi liền với 1 bức họa tạo nên kiểu thức \"*nhất thi nhất họa*\" hoặc \"*nhất tự nhất họa*\" gần như đã trở thành một phong cách riêng trong trang trí kiến trúc cung đình thời Nguyễn",
+          "*Đàn Nam Giao:*ở phía Nam của Kinh thành Huế, được xây dựng vào năm 1807. Đàn có mặt bằng hình chữ nhật, chiều dài 390m, chiều rộng 265m, gồm các hạng mục: Đàn tế, Trai cung, Thần trù, Thần khố...\n\n*Văn Miếu:*ở bờ Bắc của sông Hương, cách chùa Thiên Mụ khoảng 500m về phía Tây, được xây dựng năm 1808, để thờ Khổng Tử. Văn Miếu quay mặt về hướng Nam, bao gồm các hạng mục: Văn miếu, Đông vu, Tây vu và dãy nhà bia.",
+          "- Lăng Minh Mạng (Hiếu lăng): trên núi Cẩm Khê, xã Hương Thọ, đựợc xây dựng từ năm 1840, hoàn thành năm 1843, bao gồm các hạng mục: tẩm điện, Tam tài sơn, lăng mộ, hồ Trừng Minh và Tân Nguyệt...;\n\n- Lăng Tự Đức (Khiêm lăng): ở xã Thủy Xuân, được xây dựng từ năm 1864, hoàn thành năm 1867, bao gồm các hạng mục: La thành và các cổng, Chí Khiêm đường, điện thờ, lăng Lệ Thiên Anh Hoàng hậu, lăng Kiến Phúc, hồ Lưu Khiêm..."
+        ],
+        "source_ids": [
+          "news/article_01::chunk-0003",
+          "news/article_02::chunk-0006",
+          "news/article_05::chunk-0004",
+          "news/article_02::chunk-0009",
+          "news/article_02::chunk-0008"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.8990245145261735,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.49999999995
+        }
+      },
+      {
+        "id": "heritage-04",
+        "question": "Hổ Quyền ở Huế được xây dựng năm nào và là loại công trình gì?",
+        "expected_answer": "Hổ Quyền được xây dựng năm 1830 và là một đấu trường có mặt bằng hình vành khăn.",
+        "expected_context": "Hổ Quyền: ở địa phận xã Thủy Biều, xây dựng năm 1830. Đây là một đấu trường có mặt bằng hình vành khăn",
+        "answer": "Hổ Quyền ở Huế được xây dựng năm 1830 và là một đấu trường có mặt bằng hình vành khăn, gồm hai vòng tường gạch [1].",
+        "contexts": [
+          "*Hổ Quyền:*ở địa phận xã [Thủy Biều](http://vi.wikipedia.org/wiki/Th%E1%BB%A7y_Bi%E1%BB%81u \"Thủy Biều\"), xây dựng năm 1830. Đây là một đấu trường có mặt bằng hình vành khăn, gồm hai vòng tường gạch (ở trong và ngoài), xung quanh trổ chuồng cọp và cửa vòm cho voi ra vào, phía trên là khán đài.",
+          "*Kinh thành Huế:*được khởi công xây dựng từ năm 1805, hoàn thành năm 1832, nằm bên bờ Bắc của sông Hương, quay mặt về hướng Nam, gồm ba toà thành lồng vào nhau, được bố trí đăng đối trên một trục dọc, xuyên suốt từ mặt Nam ra mặt Bắc, xung quanh có 10 cửa chính và hệ thống vọng canh, hào nước…\n\n*Đại nội (Hoàng thành, Hoàng cung):* nằm giữa trục chính của Kinh thành Huế, bao gồm các khu vực chính như sau:\n\n- Khu vực phòng vệ gồm: hệ thống hồ Kim thủy (hào), tường bao bọc và 10 cây cầu.",
+          "*Đàn Nam Giao:*ở phía Nam của Kinh thành Huế, được xây dựng vào năm 1807. Đàn có mặt bằng hình chữ nhật, chiều dài 390m, chiều rộng 265m, gồm các hạng mục: Đàn tế, Trai cung, Thần trù, Thần khố...\n\n*Văn Miếu:*ở bờ Bắc của sông Hương, cách chùa Thiên Mụ khoảng 500m về phía Tây, được xây dựng năm 1808, để thờ Khổng Tử. Văn Miếu quay mặt về hướng Nam, bao gồm các hạng mục: Văn miếu, Đông vu, Tây vu và dãy nhà bia.",
+          "Xuyên suốt cả ba tòa thành, con đường Thần đạo chạy từ bờ sông Hương mang trên mình những công trình kiến trúc quan yếu nhất của Kinh thành Huế: Nghinh Lương Đình, Phu Văn Lâu, Kỳ Đài, Ngọ Môn, điện Thái Hòa, điện Cần Chánh, điện Càn Thành, cung Khôn Thái, lầu Kiến Trung... Hai bên đường Thần đạo này là hàng trăm công trình kiến trúc lớn nhỏ bố trí cân đối đều đặn, đan xen cây cỏ, chập chờn khi ẩn khi hiện giữa những sắc màu thiên nhiên, luôn tạo cho con người một cảm giác nhẹ nhàng thanh thản",
+          "Nằm giữa lòng Huế, bên bờ Bắc của sông Hương chảy xuyên qua từ Tây sang Đông, hệ thống kiến trúc biểu thị cho quyền uy của chế độ trung ương tập quyền Nguyễn vẫn đang sừng sững trước bao biến động của thời gian. Đó là Kinh thành Huế, Hoàng thành Huế, Tử cấm thành Huế, ba vòng thành lồng vào nhau được bố trí đăng đối trên một trục dọc xuyên suốt từ mặt Nam ra mặt Bắc."
+        ],
+        "source_ids": [
+          "news/article_02::chunk-0010",
+          "news/article_02::chunk-0004",
+          "news/article_02::chunk-0009",
+          "news/article_01::chunk-0004",
+          "news/article_01::chunk-0002"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.7853104558715657,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.9999999999
+        }
+      },
+      {
+        "id": "nha-nhac-01",
+        "question": "Nhã nhạc thường được trình diễn trong những dịp nào của cung đình?",
+        "expected_answer": "Nhã nhạc được trình diễn trong các cuộc tế lễ, lễ kỷ niệm, ngày lễ tôn giáo và những sự kiện như đăng quang, lễ tang hoặc đón tiếp chính thức.",
+        "expected_context": "được trình diễn trong cung đình Việt Nam vào các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo cũng như các sự kiện đặc biệt",
+        "answer": "Nhã nhạc thường được trình diễn trong các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo, cũng như các sự kiện đặc biệt như lễ đăng quang, lễ tang hoặc những dịp đón tiếp chính thức [1].",
+        "contexts": [
+          "# Nhã nhạc - Âm nhạc cung đình Việt Nam\n\nNhã nhạc, có ý nghĩa \"âm nhạc tao nhã\", ra đời từ thế kỷ thứ XV đến giữa thế kỷ XX, là thể loại âm nhạc được trình diễn trong cung đình Việt Nam vào các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo cũng như các sự kiện đặc biệt như: lễ đăng quang, lễ tang hoặc những dịp đón tiếp chính thức.",
+          "Nhã nhạc đã trở thành một phần thiết yếu của nghi lễ cung đình Việt Nam với hàng trăm nghi lễ khác nhau hằng năm. Tuy nhiên, vai trò của Nhã nhạc không chỉ giới hạn ở việc hòa nhạc phục vụ các nghi lễ mà còn cho thấy là một phương tiện giao tiếp và thể hiện lòng tôn kính đối với thần linh và các vua chúa thời phong kiến, cũng như truyền tải được những tư tưởng triết lý và tri thức về vũ trụ của người Việt Nam.",
+          "Đặc trưng của Nhạc cung đình là tính bao trùm đối với tất cả các bộ môn âm nhạc khác, từ Lễ nhạc (dùng vào các cuộc tế lễ lớn nhỏ của cung đình, trong các chùa miếu), nhạc thính phòng, sân khấu, kể cả các vũ điệu, mà mỗi bộ môn đều có những nghệ sĩ thượng thặng chuyên sáng tạo và biểu diễn. Các quy định về quy mô dàn nhạc, cách thức diễn xướng, nội dung bài bản, v.v",
+          "về âm nhạc cung đình qua việc kịp thời thu băng, chụp hình, quay phim những diễn xuất giai điệu, ca từ mà họ trình bày",
+          "Dàn Đại nhạc là dàn nhạc quan trọng trong hệ thống nhạc lễ cung đình Huế, được diễn tấu dưới các trình thức quan trọng trong các buổi lễ, thường được dùng trong các lễ tế như: tế Nam Giao, tế miếu, Đại triều, v.v. Đây là dàn nhạc có âm lượng lớn, chủ yếu là dàn trống và kèn, kèm theo các nhạc cụ gõ và hơi khác như: bồng, não bạt (chũm chọe), mõ sừng trâu, trống cơm, kèn bầu, kèn lỡ và trong rất ít trường hợp là đàn nhị."
+        ],
+        "source_ids": [
+          "news/article_03::chunk-0000",
+          "news/article_03::chunk-0009",
+          "news/article_03::chunk-0003",
+          "news/article_03::chunk-0016",
+          "news/article_03::chunk-0006"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.7139486705342085,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.94999999997625
+        }
+      },
+      {
+        "id": "nha-nhac-02",
+        "question": "Nhã nhạc được UNESCO công nhận vào ngày nào?",
+        "expected_answer": "Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm 2003.",
+        "expected_context": "Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm 2003",
+        "answer": "Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm 2003 [1].",
+        "contexts": [
+          "*Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm* *2003.*\n\n**Nguy cơ và thách thức:**",
+          "Ngày nay, Huế trở thành một thành phố Festival tổ chức hai năm một lần. Huế là một di sản văn hóa độc đáo của Việt Nam và thế giới. Ngày 7 tháng 11 năm 2003, Âm nhạc cung đình Huế: Nhã nhạc (triều Nguyễn) đã được UNESCO ghi tên vào danh mục Các Kiệt tác Di sản phi vật thể của nhân loại.",
+          "Nhã nhạc xuất hiện đầu tiên ở Trung Quốc dưới thời nhà Chu (thế kỷ VI - III TCN). Về sau, Nhã nhạc được lan tỏa sang các nước láng giềng như: Nhật Bản, Triều Tiên và Việt Nam. Tuy được xem là tài sản chung nhưng nhã nhạc của mỗi nước đều có điểm riêng biệt. Ở Việt Nam, Nhã nhạc bắt đầu xuất hiện vào thế kỷ XV, nhưng phải đến thời kỳ nhà Nguyễn mới phát triển rực rỡ và đạt đến trình độ uyên bác",
+          "Là thể loại âm nhạc mang đầy đủ các điều kiện, tiêu chí của dòng âm nhạc cộng hưởng giữa dân gian, chuyên nghiệp và bác học của thể loại thính phòng, một thể loại âm nhạc đỉnh cao trong toàn bộ các di sản âm nhạc truyền thống Việt Nam, Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015./.",
+          "# Nhã nhạc - Âm nhạc cung đình Việt Nam\n\nNhã nhạc, có ý nghĩa \"âm nhạc tao nhã\", ra đời từ thế kỷ thứ XV đến giữa thế kỷ XX, là thể loại âm nhạc được trình diễn trong cung đình Việt Nam vào các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo cũng như các sự kiện đặc biệt như: lễ đăng quang, lễ tang hoặc những dịp đón tiếp chính thức."
+        ],
+        "source_ids": [
+          "news/article_03::chunk-0010",
+          "news/article_01::chunk-0007",
+          "news/article_03::chunk-0001",
+          "news/article_04::chunk-0019",
+          "news/article_03::chunk-0000"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.7538271170648692,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999995
+        }
+      },
+      {
+        "id": "nha-nhac-03",
+        "question": "Dàn Đại nhạc dùng trong những lễ nào và có đặc điểm âm lượng ra sao?",
+        "expected_answer": "Dàn Đại nhạc dùng trong các lễ như tế Nam Giao, tế miếu và Đại triều; đây là dàn nhạc có âm lượng lớn.",
+        "expected_context": "Dàn Đại nhạc là dàn nhạc quan trọng trong hệ thống nhạc lễ cung đình Huế, được diễn tấu dưới các trình thức quan trọng",
+        "answer": "Dàn Đại nhạc được dùng trong các lễ tế như tế Nam Giao, tế miếu, Đại triều, v.v. Đây là dàn nhạc có âm lượng lớn, chủ yếu là dàn trống và kèn, kèm theo các nhạc cụ gõ và hơi khác như: bồng, não bạt (chũm chọe), mõ sừng trâu, trống cơm, kèn bầu, kèn lỡ và trong rất ít trường hợp là đàn nhị [1].",
+        "contexts": [
+          "Dàn Đại nhạc là dàn nhạc quan trọng trong hệ thống nhạc lễ cung đình Huế, được diễn tấu dưới các trình thức quan trọng trong các buổi lễ, thường được dùng trong các lễ tế như: tế Nam Giao, tế miếu, Đại triều, v.v. Đây là dàn nhạc có âm lượng lớn, chủ yếu là dàn trống và kèn, kèm theo các nhạc cụ gõ và hơi khác như: bồng, não bạt (chũm chọe), mõ sừng trâu, trống cơm, kèn bầu, kèn lỡ và trong rất ít trường hợp là đàn nhị.",
+          "So với Đại nhạc, dàn Tiểu nhạc có bài bản âm nhạc tương đối ổn định hơn và mang màu sắc trang nhã, vui tươi, thường được dùng trong các buổi yến tiệc của triều đình, trong các lễ đại khánh, dịp tết nguyên đán. Nhiều bài bản tiểu nhạc còn có lời ca. Nhạc khí của Tiểu nhạc bao gồm: trống bản, não bạt, mõ sừng trâu, phách tiền, tam âm la, trống chiến, sáo, đàn tam, nhị, tỳ bà và đàn nguyệt",
+          "Đặc trưng của Nhạc cung đình là tính bao trùm đối với tất cả các bộ môn âm nhạc khác, từ Lễ nhạc (dùng vào các cuộc tế lễ lớn nhỏ của cung đình, trong các chùa miếu), nhạc thính phòng, sân khấu, kể cả các vũ điệu, mà mỗi bộ môn đều có những nghệ sĩ thượng thặng chuyên sáng tạo và biểu diễn. Các quy định về quy mô dàn nhạc, cách thức diễn xướng, nội dung bài bản, v.v",
+          "Nhạc khí dùng trong Nhạc cung đình được \"chế tạo tinh vi, chạm cẩn khéo léo, tinh xảo hơn nhạc khí dùng trong dân gian, lại có đầy đủ màu âm: tiếng kim, tiếng thổ, tiếng trong, tiếng đục, tiếng trầm, tiếng bổng, tiếng tơ, tiếng trúc, tiếng da, tiếng đá (khánh), tiếng đồng. Về độ cao có tiếng trầm của dây đài đàn tỳ bà, tiếng cao vút vi vu của tiếng sáo\"\\*.",
+          ". Biên chế của dàn nhạc phải sử dụng đạt chuẩn 4 hoặc 5 nhạc cụ trong dàn ngũ tuyệt cổ điển, bao gồm: đàn nguyệt, đàn tỳ bà, đàn nhị, đàn tranh, đàn tam và tuỳ theo từng trường hợp có thể không có cây đàn tam và bổ sung thêm cây đàn bầu với đầy đủ biên chế của dàn ngũ tuyệt, hoặc có thể dùng dàn “*tứ tuyệt*” bao gồm các nhạc cụ: nguyệt, nhị, tỳ và đàn tranh hoặc đầy đủ hơn là dàn lục ngự: tam, tỳ, nhị, nguyệt, tranh, bầu."
+        ],
+        "source_ids": [
+          "news/article_03::chunk-0006",
+          "news/article_03::chunk-0007",
+          "news/article_03::chunk-0003",
+          "news/article_03::chunk-0005",
+          "news/article_04::chunk-0005"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.5865392373751092,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.8333333332916666
+        }
+      },
+      {
+        "id": "ca-hue-01",
+        "question": "Ca Huế được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo quyết định nào?",
+        "expected_answer": "Ca Huế được đưa vào Danh mục theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015.",
+        "expected_context": "Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL",
+        "answer": "Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015 [1].",
+        "contexts": [
+          "Là thể loại âm nhạc mang đầy đủ các điều kiện, tiêu chí của dòng âm nhạc cộng hưởng giữa dân gian, chuyên nghiệp và bác học của thể loại thính phòng, một thể loại âm nhạc đỉnh cao trong toàn bộ các di sản âm nhạc truyền thống Việt Nam, Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015./.",
+          "Ngày nay, Huế trở thành một thành phố Festival tổ chức hai năm một lần. Huế là một di sản văn hóa độc đáo của Việt Nam và thế giới. Ngày 7 tháng 11 năm 2003, Âm nhạc cung đình Huế: Nhã nhạc (triều Nguyễn) đã được UNESCO ghi tên vào danh mục Các Kiệt tác Di sản phi vật thể của nhân loại.",
+          "Với những giá trị lịch sử, văn hóa và khoa học đặc biệt của di tích, Thủ tướng Chính phủ đã quyết định xếp hạng Di tích lịch sử và kiến trúc nghệ thuật Quần thể kiến trúc Cố đô Huế là di tích quốc gia đặc biệt (Quyết định số 1272/QĐ-TTg, ngày 12/08/2009).\n\n**Cảnh Toàn (Theo Hồ sơ xếp hạng di tích, tư liệu Cục Di sản văn hóa)**",
+          "Theo các nghiên cứu, thời điểm hình thành và phát triển của thể loại Ca Huế có thể từ thế kỷ XVII đến giữa thế kỷ XVIII",
+          "Ca Huế là loại âm nhạc bác học, chuyên nghiệp có những yêu cầu cao về kỹ thuật ca hát. Người hát Ca Huế và nhạc công Ca Huế phải là những người có năng khiếu về âm nhạc và phải có một quy trình đào tạo lâu dài. Trong Ca Huế, có nhiều loại bài bản, điệu thức, hơi nhạc, nên cũng có nhiều cách hát khác nhau, thể hiện các sắc thái tình cảm của từng bài bản"
+        ],
+        "source_ids": [
+          "news/article_04::chunk-0019",
+          "news/article_01::chunk-0007",
+          "news/article_02::chunk-0012",
+          "news/article_04::chunk-0001",
+          "news/article_04::chunk-0014"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.6031052639491973,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.9999999999
+        }
+      },
+      {
+        "id": "ca-hue-02",
+        "question": "Ca Huế có bao nhiêu bài bản hiện còn và các điệu thức chính là gì?",
+        "expected_answer": "Ca Huế hiện còn 31 bài bản; ba điệu thức chính là điệu Bắc, điệu Nam và Nam xuân.",
+        "expected_context": "Ca Huế được xây dựng trên 3 điệu thức chính là điệu Bắc, điệu Nam và Nam xuân",
+        "answer": "Ca Huế hiện còn 31 bài bản, trong đó có 13 bản thuộc điệu Bắc, 5 bài bản theo điệu Nam, 5 bài bản theo điệu Nam Xuân, 2 bài của điệu Bắc (Cổ bản) và điệu Nam (Nam bình) được hát theo hơi dựng, 6 bài bản vẫn còn nhạc phổ bằng Hán tự nhưng chưa được phục dựng. Các điệu thức chính của Ca Huế là điệu Bắc, điệu Nam và điệu Nam Xuân [1][5].",
+        "contexts": [
+          "Ca Huế hiện còn 31 bài bản, trong đó, 13 bản thuộc điệu Bắc, 5 bài bản theo điệu Nam, 5 bài bản theo điệu Nam Xuân, 2 bài của điệu Bắc (Cổ bản) và điệu Nam (Nam bình) được hát theo hơi dựng, 6 bài bản vẫn còn nhạc phổ bằng Hán tự nhưng chưa được phục dựng.\n\n**Về nghệ thuật ca và âm nhạc của Ca Huế**",
+          "Ca Huế được xây dựng trên 3 điệu thức chính là điệu Bắc, điệu Nam và Nam xuân. Các bài bản mang điệu Bắc có tính chất vui tươi, trong sáng, trang trọng và thuần khiết với 10 bài liên hoàn và 3 bài lẻ. Điệu Nam có 5 bài mang tính chất buồn thương, bi ai, vương vấn; cấu trúc giai điệu có nhiều lớp, luyến láy trong cách ca và có yêu cầu cao về phát âm, nhả chữ, luyến láy thay đổi sắc thái trong từng câu hát",
+          "Ca Huế được các nghệ nhân tài danh sáng tạo, bổ sung tạo thành hệ thống bài bản phong phú, với giai điệu hoàn chỉnh mang tính nghệ thuật cao, lời ca giàu chất văn học, kỹ thuật ca hát tinh tế, điêu luyện, nhạc đệm hoàn hảo.\n\n**Về hệ thống bài bản của Ca Huế**",
+          "Các bài bản thuộc hơi dựng là nét đặc biệt độc đáo của Ca Huế với cách ca biến đổi sắc thái, từ hơi ai sang hơi oán dựa trên bài bản một điệu Bắc hay điệu Nam. Hơi dựng không có một hệ thống bài bản riêng như điệu Bắc hoặc điệu Nam, mà nó chỉ là một phong cách đặc biệt của Ca Huế và chỉ có 2 bài ca theo hơi dựng. Đó là bài Cổ bản thuộc điệu Bắc và Nam bình thuộc điệu Nam.",
+          "Tính liên tục, chuyển tiếp, biến âm, biến điệu, tự tình, cô đọng súc tích từ nội dung tới hình thức của ca Huế giúp nhạc công và ca nương có thể bộc lộ các tuyệt kỹ của mình.\n\nCa Huế là một trong những tiểu hệ cấu thành trong tổng thể của văn hoá Huế, với giai điệu, nhịp điệu trầm lặng, sâu lắng và trữ tình. Nguồn gốc cung đình và tính bác học của Ca Huế được bộc lộ rõ ở hệ bài bản, hệ nhạc khí đệm, ở sự phát triển của phần khí nhạc cũng như dấu vết âm luật."
+        ],
+        "source_ids": [
+          "news/article_04::chunk-0013",
+          "news/article_04::chunk-0010",
+          "news/article_04::chunk-0009",
+          "news/article_04::chunk-0012",
+          "news/article_04::chunk-0018"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.7916286732660709,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999995
+        }
+      },
+      {
+        "id": "poetry-01",
+        "question": "Kiểu trang trí nào kết hợp một ô thơ hoặc đại tự với một bức họa trong kiến trúc cung đình Huế?",
+        "expected_answer": "Đó là kiểu thức “nhất thi nhất họa” hoặc “nhất tự nhất họa”.",
+        "expected_context": "một ô thơ hoặc 1 đại tự đi liền với 1 bức họa tạo nên kiểu thức \"nhất thi nhất họa\" hoặc \"nhất tự nhất họa\"",
+        "answer": "Kiểu trang trí kết hợp một ô thơ hoặc một đại tự với một bức họa trong kiến trúc cung đình Huế được gọi là \"*nhất thi nhất họa*\" hoặc \"*nhất tự nhất họa*\", đã trở thành một phong cách riêng trong trang trí kiến trúc cung đình thời Nguyễn [1].",
+        "contexts": [
+          ". Các công trình kiến trúc từ Ngọ Môn, điện Thái Hòa, điện Cần Chánh, Triệu Miếu, Hưng Tổ Miếu, Thế Tổ Miếu, chùa Thiên Mụ… đều sử dụng văn thơ để trang trí trên liên ba, đố bản, cổ diềm ở cả nội và ngoại thất công trình. Và cách trang trí 1 ô thơ hoặc 1 đại tự đi liền với 1 bức họa tạo nên kiểu thức \"*nhất thi nhất họa*\" hoặc \"*nhất tự nhất họa*\" gần như đã trở thành một phong cách riêng trong trang trí kiến trúc cung đình thời Nguyễn",
+          ". Một ô thơ đi kèm với một ô họa khắc những đề tài truyền thống thuần túy Việt Nam như bát bửu, hoa lá, trái cây, rồng, hạc, đầu rồng, dây lá… Nội dung của những ô họa chỉ mang tính chất trang trí, không minh họa cho nội dung của những ô thơ đi kèm với nó. Trải qua một thời gian dài, sự tàn phá của chiến tranh, các thảm họa thiên nhiên và con người, Cố đô Huế còn bảo lưu được một khối lượng rất lớn thơ văn trên các di tích kiến trúc này",
+          ". Theo thống kê hiện nay, trên các di tích kiến trúc cung đình có tổng số 2679 ô thơ văn và cũng có chừng đó ô họa được chạm khắc, sơn thếp, cẩn xà cừ trên gỗ, trên pháp lam và đắp ngõa sành sứ. Đây thật sự là một bảo tàng sống động về văn chương của triều Nguyễn.",
+          ". Đây là một hình thức trang trí được thực hiện trên các liên ba sơn son thếp vàng, dùng kiểu ô hộc lớn nhỏ xen nhau, thể hiện nhiều đề tài, nhiều biểu tượng kèm theo, được lắp đặt khéo léo tại phần trên của các bức tường. Trong giai đoạn này, chất liệu chế tác để tạo nên văn thơ là từ gỗ quý hoặc có độ bền vững cao (lim, kiền kiền, thị, dỗi rừng…) hoặc xà cừ, xương hay cao cấp hơn là ngà voi, hoặc đồ pháp lam (đồ đồng tráng men), bê tông đắp ngõa sành sứ.",
+          ". Có thể nói, kinh đô Huế thời Nguyễn là sự tích hợp và phát triển đến đỉnh cao của nghệ thuật kiến trúc truyền thống Việt Nam với một quy hoạch hoàn chỉnh và một hệ thống công trình kiến trúc đồ sộ, bao gồm thành quách, cung điện, lăng tẩm, đàn miếu, chùa quán... được đặt trong một khung cảnh thiên nhiên thơ mộng, tuyệt đẹp với sông Hương, núi Ngự, đồi Vọng Cảnh, phá Tam Giang.."
+        ],
+        "source_ids": [
+          "news/article_05::chunk-0004",
+          "news/article_05::chunk-0007",
+          "news/article_05::chunk-0008",
+          "news/article_05::chunk-0005",
+          "news/article_05::chunk-0003"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 0.6666666666666666,
+          "answer_relevancy": 0.6248406086048015,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.999999999975
+        }
+      },
+      {
+        "id": "plan-275-01",
+        "question": "Kế hoạch 275/KH-UBND của Huế được ban hành ngày nào và triển khai đề án cho giai đoạn nào?",
+        "expected_answer": "Kế hoạch 275/KH-UBND ban hành ngày 25 tháng 6 năm 2025, triển khai đề án phát triển du lịch và dịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045.",
+        "expected_context": "Số: 275 /KH-UBND Huế, ngày 25 tháng 6 năm 2025",
+        "answer": "Kế hoạch 275/KH-UBND của Huế được ban hành ngày 25 tháng 6 năm 2025 và triển khai đề án cho giai đoạn 2025–2030, tầm nhìn đến năm 2045 [4].",
+        "contexts": [
+          "đoạn 2026 – 2027 với những nội dung sau:\nI. MỤC ĐÍCH, YÊU CẦU\n1. Mục đích\n- Cụ thể hóa và tổ chức triển khai hiệu quả Kế hoạch số 275/KH-UBND\nngày 25/6/2025 của UBND thành phố về thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045” và\nKế hoạch số 157/KH-UBND ngày 08/4/2025 về phát triển du lịch cộng đồng\ngiai đoạn 2025–2030; đồng thời định hướng phát triển du lịch sinh thái, du lịch",
+          "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nTHÀNH PHỐ HUẾ Độc lập - Tự do - Hạnh phúc\nSố: 275 /KH-UBND Huế, ngày 25 tháng 6 năm 2025\nKẾ HOẠCH\nTriển khai thực hiện Đề án “Phát triển du lịch, dịch vụ du lịch\nthành phố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”\nCăn cứ Nghị quyết số 37-NQ/TU ngày 22/4/2025 của Hội nghị lần thứ\nmười tám Ban Chấp hành Đảng bộ thành phố Khóa XVI về phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025 - 2030, tầm nhìn đến năm 2045;",
+          "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nTHÀNH PHỐ HUẾ Độc lập - Tự do - Hạnh phúc\nSố: 188 /KH-UBND Huế, ngày 02 tháng 4 năm 2026\nKẾ HOẠCH\nPhát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế\ngiai đoạn 2026 – 2027\nThực hiện Kế hoạch số 275/KH-UBND ngày 25/6/2025 của UBND thành\nphố về Triển khai thực hiện Đề án “Phát triển du lịch, dịch vụ du lịch thành phố\nHuế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”; Kế hoạch số 157/KH-",
+          "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19/6/2025 của Ủy ban nhân dân\nthành phố Huế về việc phê duyệt Đề án “Phát triển du lịch, dịch vụ du lịch thành\nphố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”. Ủy ban nhân dân\nthành phố Huế ban hành Kế hoạch triển khai thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”\nvới những nội dung chủ yếu tập trung cho giai đoạn 2025-2030 như sau:\nI. MỤC TIÊU\n1. Mục tiêu chung",
+          "cao chất lượng dịch vụ và góp phần bảo vệ tài nguyên, môi trường du lịch.\nTrên đây là Kế hoạch phát triển du lịch sinh thái, du lịch cộng đồng thành\nphố Huế giai đoạn 2026 - 2027, yêu cầu các sở, ban, ngành, cơ quan, đơn vị liên\nquan; Ủy ban nhân dân các xã, phường nghiêm túc triển khai thực hiện, báo cáo\nđịnh kỳ (ngày 25/12 năm 2026, năm 2027) kết quả thực hiện gửi Ủy ban nhân\ndân thành phố (qua Sở Du lịch tổng hợp) để tổng hợp, báo cáo theo quy định./.\nNơi nhận: TM. ỦY BAN NHÂN DÂN"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0001",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0066"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.6598822115247018,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.999999999975
+        }
+      },
+      {
+        "id": "plan-275-02",
+        "question": "Đến năm 2030, Kế hoạch 275 định hướng vị thế du lịch Huế như thế nào?",
+        "expected_answer": "Đến năm 2030, du lịch Huế được định hướng là ngành kinh tế mũi nhọn và là điểm đến hấp dẫn, an toàn, thân thiện thuộc nhóm dẫn đầu cả nước.",
+        "expected_context": "Đến năm 2030, du lịch Huế thật sự là ngành kinh tế mũi nhọn, là điểm đến hấp dẫn, an toàn, thân thiện thuộc nhóm dẫn đầu cả nước",
+        "answer": "Đến năm 2030, Kế hoạch 275 định hướng du lịch Huế thật sự là ngành kinh tế mũi nhọn, là điểm đến hấp dẫn, an toàn, thân thiện thuộc nhóm dẫn đầu cả nước [4].",
+        "contexts": [
+          "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19/6/2025 của Ủy ban nhân dân\nthành phố Huế về việc phê duyệt Đề án “Phát triển du lịch, dịch vụ du lịch thành\nphố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”. Ủy ban nhân dân\nthành phố Huế ban hành Kế hoạch triển khai thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”\nvới những nội dung chủ yếu tập trung cho giai đoạn 2025-2030 như sau:\nI. MỤC TIÊU\n1. Mục tiêu chung",
+          "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nTHÀNH PHỐ HUẾ Độc lập - Tự do - Hạnh phúc\nSố: 275 /KH-UBND Huế, ngày 25 tháng 6 năm 2025\nKẾ HOẠCH\nTriển khai thực hiện Đề án “Phát triển du lịch, dịch vụ du lịch\nthành phố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”\nCăn cứ Nghị quyết số 37-NQ/TU ngày 22/4/2025 của Hội nghị lần thứ\nmười tám Ban Chấp hành Đảng bộ thành phố Khóa XVI về phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025 - 2030, tầm nhìn đến năm 2045;",
+          "đoạn 2026 – 2027 với những nội dung sau:\nI. MỤC ĐÍCH, YÊU CẦU\n1. Mục đích\n- Cụ thể hóa và tổ chức triển khai hiệu quả Kế hoạch số 275/KH-UBND\nngày 25/6/2025 của UBND thành phố về thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045” và\nKế hoạch số 157/KH-UBND ngày 08/4/2025 về phát triển du lịch cộng đồng\ngiai đoạn 2025–2030; đồng thời định hướng phát triển du lịch sinh thái, du lịch",
+          "cao của du khách; đổi mới mạnh mẽ phương thức xúc tiến quảng bá du lịch, đảm\nbảo thống nhất, chuyên nghiệp và thật sự hiệu quả.\n- Phát triển du lịch theo hướng bền vững, chất lượng, hiệu quả; đẩy mạnh\nứng dụng những thành tựu của cuộc cách mạng công nghiệp 4.0 và chú trọng\nphát triển nguồn nhân lực chất lượng cao.\n2. Mục tiêu cụ thể\n- Đến năm 2030, du lịch Huế thật sự là ngành kinh tế mũi nhọn, là điểm\nđến hấp dẫn, an toàn, thân thiện thuộc nhóm dẫn đầu cả nước; là một trong",
+          "| 1                    |         |                     |     | x x | 2025-2030 |\ntruyền\n| Xây dựng các sản phẩm, mô hình, tour  | Doanh   | nghiệp  Sở Du lịch; Sở Y tế  |           |     |           |\n| ------------------------------------- | ------- | ---------------------------- | --------- | --- | --------- |\n| chăm sóc sức khỏe tại Huế             | du lịch | UBND                         | các  địa  |     |           |"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0001",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0004",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0177"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.677478535444221,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999998
+        }
+      },
+      {
+        "id": "plan-275-03",
+        "question": "Kế hoạch 275 khuyến khích người dân địa phương tham gia du lịch bằng những hoạt động nào?",
+        "expected_answer": "Kế hoạch khuyến khích người dân tham gia qua homestay, làm hướng dẫn viên địa phương và bán sản phẩm thủ công.",
+        "expected_context": "Khuyến khích người dân tham gia vào các hoạt động du lịch, như homestay, hướng dẫn viên địa phương và bán sản phẩm thủ công",
+        "answer": "Kế hoạch 275 khuyến khích người dân địa phương tham gia du lịch thông qua việc ban hành cơ chế, chính sách đặc thù hỗ trợ cho người dân và doanh nghiệp đầu tư phát triển dịch vụ du lịch gắn với Khu dịch vụ - du lịch ở các phường nội thành và phố cổ, cũng như xây dựng chính sách ưu đãi về thuế nhằm khuyến khích các dự án đầu tư phát triển du lịch xanh gắn với bảo tồn tự nhiên và văn hóa [5].",
+        "contexts": [
+          "5\n- Chủ động lồng ghép, huy động hiệu quả các nguồn lực từ Chương trình\nmục tiêu quốc gia xây dựng nông thôn mới, Chương trình OCOP, Chương trình\ngiảm nghèo bền vững và Chương trình phát triển kinh tế - xã hội vùng đồng bào\ndân tộc thiểu số để đầu tư hạ tầng, nâng cao chất lượng sản phẩm và hỗ trợ cộng\nđồng tham gia du lịch.\n- Khuyến khích thành lập tổ hợp tác, hợp tác xã du lịch cộng đồng tại các\nđịa bàn có điều kiện thuận lợi như Kim Long, Thủy Xuân, Đan Điền, A Lưới",
+          "3\n- Ban hành cơ chế, chính sách đặc thù hỗ trợ cho người dân và doanh\nnghiệp đầu tư phát triển dịch vụ du lịch gắn với Khu dịch vụ - du lịch ở các\nphường nội thành và phố cổ Gia Hội, Bao Vinh.\n- Xây dựng chính sách ưu đãi về thuế nhằm khuyến khích các dự án đầu tư\nphát triển du lịch xanh gắn với bảo tồn tự nhiên và văn hóa; quy định về xây\ndựng hệ thống xử lý nước thải, thu gom, tái chế chất thải trong các cơ sở kinh\ndoanh; cơ chế khuyến khích doanh nghiệp sử dụng vật liệu thân thiện môi",
+          "III. NHIỆM VỤ VÀ GIẢI PHÁP CHỦ YẾU GIAI ĐOẠN 2026–2027\n1. Hoàn thiện cơ chế, chính sách và huy động nguồn lực\n- Triển khai chính sách hỗ trợ phát triển du lịch cộng đồng giai đoạn 2026–\n2030, các địa phương chủ động bố trí kinh phí, rà soát nhu cầu hỗ trợ người dân\nphát triển du lịch sinh thái, du lịch cộng đồng; trong đó tập trung hỗ trợ đầu tư\nquy mô nhỏ tại các mô hình điểm (homestay, biển hiệu, bảng chỉ dẫn, chỉnh\ntrang cảnh quan, nhà vệ sinh đạt chuẩn, khu trải nghiệm, không gian đón khách",
+          "và các hạng mục thiết yếu khác).\n- Các địa phương chủ động rà soát nhu cầu, đăng ký nhiệm vụ triển khai\nchính sách hỗ trợ phát triển du lịch cộng đồng giai đoạn 2026–2030; hỗ trợ\nngười dân phát triển du lịch sinh thái, du lịch cộng đồng, ưu tiên đầu tư các hạng\nmục tại các mô hình điểm như: homestay, biển hiệu, bảng chỉ dẫn, chỉnh trang\ncảnh quan, nhà vệ sinh đạt chuẩn, khu trải nghiệm, không gian đón khách và các\nhạng mục thiết yếu khác",
+          "đoạn 2026 – 2027 với những nội dung sau:\nI. MỤC ĐÍCH, YÊU CẦU\n1. Mục đích\n- Cụ thể hóa và tổ chức triển khai hiệu quả Kế hoạch số 275/KH-UBND\nngày 25/6/2025 của UBND thành phố về thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045” và\nKế hoạch số 157/KH-UBND ngày 08/4/2025 về phát triển du lịch cộng đồng\ngiai đoạn 2025–2030; đồng thời định hướng phát triển du lịch sinh thái, du lịch"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0021",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0012",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0019",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0020",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.5838358814589458,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.6388888888675925
+        }
+      },
+      {
+        "id": "plan-188-01",
+        "question": "Kế hoạch 188/KH-UBND tập trung phát triển loại hình du lịch nào và trong giai đoạn nào?",
+        "expected_answer": "Kế hoạch 188 tập trung phát triển du lịch sinh thái và du lịch cộng đồng thành phố Huế giai đoạn 2026–2027.",
+        "expected_context": "Phát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế giai đoạn 2026 – 2027",
+        "answer": "Kế hoạch 188/KH-UBND tập trung phát triển du lịch sinh thái và du lịch cộng đồng trong giai đoạn 2026–2027 [1].",
+        "contexts": [
+          "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nTHÀNH PHỐ HUẾ Độc lập - Tự do - Hạnh phúc\nSố: 188 /KH-UBND Huế, ngày 02 tháng 4 năm 2026\nKẾ HOẠCH\nPhát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế\ngiai đoạn 2026 – 2027\nThực hiện Kế hoạch số 275/KH-UBND ngày 25/6/2025 của UBND thành\nphố về Triển khai thực hiện Đề án “Phát triển du lịch, dịch vụ du lịch thành phố\nHuế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”; Kế hoạch số 157/KH-",
+          "đoạn 2026 – 2027 với những nội dung sau:\nI. MỤC ĐÍCH, YÊU CẦU\n1. Mục đích\n- Cụ thể hóa và tổ chức triển khai hiệu quả Kế hoạch số 275/KH-UBND\nngày 25/6/2025 của UBND thành phố về thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045” và\nKế hoạch số 157/KH-UBND ngày 08/4/2025 về phát triển du lịch cộng đồng\ngiai đoạn 2025–2030; đồng thời định hướng phát triển du lịch sinh thái, du lịch",
+          "Giang – Văn hóa làng chài và sinh kế ngư nghiệp;(3) Vùng Miền núi – Sinh thái\nsuối thác – Văn hóa dân tộc bản địa; (4) Vùng Nông nghiệp sinh thái – Làng quê\n– Trải nghiệm OCOP; nhằm phục vụ công tác quản lý, quy hoạch và kết nối tour\ntuyến.\n- Ưu tiên đầu tư, nâng cấp hạ tầng thiết yếu tại các mô hình điểm thuộc các\nđịa bàn trọng tâm như Kim Long, Thủy Xuân, Thanh Thủy (khu vực ven sông);\nĐan Điền, Phú Thuận, Phong Quảng (khu vực biển, đầm phá); và các khu vực",
+          "và các hạng mục thiết yếu khác).\n- Các địa phương chủ động rà soát nhu cầu, đăng ký nhiệm vụ triển khai\nchính sách hỗ trợ phát triển du lịch cộng đồng giai đoạn 2026–2030; hỗ trợ\nngười dân phát triển du lịch sinh thái, du lịch cộng đồng, ưu tiên đầu tư các hạng\nmục tại các mô hình điểm như: homestay, biển hiệu, bảng chỉ dẫn, chỉnh trang\ncảnh quan, nhà vệ sinh đạt chuẩn, khu trải nghiệm, không gian đón khách và các\nhạng mục thiết yếu khác",
+          "tầng kỹ thuật, điều kiện môi trường và khả năng khai thác du lịch tại các xã,\nphường trên địa bàn Huế; trên cơ sở đó lựa chọn các địa bàn có tiềm năng để\nxây dựng mô hình du lịch sinh thái, du lịch cộng đồng và ưu tiên đầu tư trong\ngiai đoạn 2026–2027.\n- Xây dựng cơ sở dữ liệu và bản đồ số các điểm du lịch sinh thái, du lịch\ncộng đồng theo 04 cụm không gian phát triển du lịch gồm: (1) Vùng Di sản –\nSông Hương – Làng nghề, Nhà vườn Huế; (2) Vùng Biển – Đầm phá Tam"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0025",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0020",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0024"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.5329365199854422,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.8874999999778125
+        }
+      },
+      {
+        "id": "plan-188-02",
+        "question": "Kế hoạch 188 đặt mục tiêu hình thành bao nhiêu cụm du lịch sinh thái, du lịch cộng đồng và theo các không gian nào?",
+        "expected_answer": "Kế hoạch đặt mục tiêu hình thành 4 cụm theo các không gian ven sông–ven đô, đầm phá–biển, miền núi–sinh thái rừng và nông nghiệp–làng quê.",
+        "expected_context": "Hình thành 04 cụm du lịch sinh thái, du lịch cộng đồng theo không gian sinh thái đặc trưng",
+        "answer": "Kế hoạch 188 đặt mục tiêu hình thành 04 cụm du lịch sinh thái, du lịch cộng đồng theo các không gian: ven sông – ven đô; đầm phá – biển; miền núi – sinh thái rừng; nông nghiệp – làng quê [1].",
+        "contexts": [
+          "– biển, đầm phá, góp phần nâng cao chất lượng sản phẩm du lịch, tạo sinh kế bền\nvững cho người dân và đóng góp tích cực vào phát triển kinh tế – xã hội của\nthành phố.\n2. Mục tiêu cụ thể\n- Hình thành 04 cụm du lịch sinh thái, du lịch cộng đồng theo không gian\nsinh thái đặc trưng trên địa bàn thành phố: ven sông – ven đô; đầm phá – biển;\nmiền núi – sinh thái rừng; nông nghiệp – làng quê.\n- Rà soát, lựa chọn và tổ chức triển khai du lịch sinh thái, du lịch cộng đồng",
+          "tầng kỹ thuật, điều kiện môi trường và khả năng khai thác du lịch tại các xã,\nphường trên địa bàn Huế; trên cơ sở đó lựa chọn các địa bàn có tiềm năng để\nxây dựng mô hình du lịch sinh thái, du lịch cộng đồng và ưu tiên đầu tư trong\ngiai đoạn 2026–2027.\n- Xây dựng cơ sở dữ liệu và bản đồ số các điểm du lịch sinh thái, du lịch\ncộng đồng theo 04 cụm không gian phát triển du lịch gồm: (1) Vùng Di sản –\nSông Hương – Làng nghề, Nhà vườn Huế; (2) Vùng Biển – Đầm phá Tam",
+          "III. NHIỆM VỤ VÀ GIẢI PHÁP CHỦ YẾU GIAI ĐOẠN 2026–2027\n1. Hoàn thiện cơ chế, chính sách và huy động nguồn lực\n- Triển khai chính sách hỗ trợ phát triển du lịch cộng đồng giai đoạn 2026–\n2030, các địa phương chủ động bố trí kinh phí, rà soát nhu cầu hỗ trợ người dân\nphát triển du lịch sinh thái, du lịch cộng đồng; trong đó tập trung hỗ trợ đầu tư\nquy mô nhỏ tại các mô hình điểm (homestay, biển hiệu, bảng chỉ dẫn, chỉnh\ntrang cảnh quan, nhà vệ sinh đạt chuẩn, khu trải nghiệm, không gian đón khách",
+          "| ---------------------------------- | --- | --- | --- | ---------- | --- | --- | --- |\n7. Rà soát, đánh giá hoạt động của các  Các điểm du lịch sinh thái,  UBND các địa  Sở Du lịch 2026\n| mô hình quản lý du lịch sinh thái,  |     |     | cộng đồng  | phương |     |     |     |\n| ----------------------------------- | --- | --- | ---------- | ------ | --- | --- | --- |\ndu lịch cộng đồng hiện có; hướng\ndẫn kiện toàn tổ chức quản lý, đảm",
+          "18\n| cộng đồng |     |     |     |     | Du lịch; các cơ sở  |     |     |\n| --------- | --- | --- | --- | --- | ------------------- | --- | --- |\nđào tạo\nXây dựng Sổ tay hướng dẫn, giới\nUBND các địa\n| thiệu các điểm du lịch sinh thái, du  |     |     | Các điểm du lịch sinh thái,  |            |                   |      |      |\n| ------------------------------------- | --- | --- | ---------------------------- | ---------- | ----------------- | ---- | ---- |"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0009",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0024",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0019",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0130",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0121"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.48226290647304065,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999995
+        }
+      },
+      {
+        "id": "plan-188-03",
+        "question": "Phát triển du lịch sinh thái và du lịch cộng đồng theo Kế hoạch 188 phải gắn với các yêu cầu nào?",
+        "expected_answer": "Việc phát triển phải gắn với bảo vệ môi trường, bảo tồn cảnh quan thiên nhiên, giữ gìn bản sắc văn hóa và bảo đảm an toàn cho cộng đồng địa phương.",
+        "expected_context": "Việc phát triển du lịch sinh thái và du lịch cộng đồng phải gắn với bảo vệ môi trường, bảo tồn cảnh quan thiên nhiên, giữ gìn bản sắc văn hóa",
+        "answer": "Phát triển du lịch sinh thái và du lịch cộng đồng theo Kế hoạch 188 phải gắn với các yêu cầu sau:\n\n1. Đảm bảo thiết thực, hiệu quả, có trọng tâm, trọng điểm, phù hợp với điều kiện thực tế của từng địa phương; tránh dàn trải, hình thức [1].\n2. Xác định rõ mục tiêu, nội dung công việc, lộ trình thực hiện trong phạm vi kế hoạch [1].\n3. Gắn trách nhiệm cụ thể cho từng cơ quan, đơn vị, địa phương và bảo đảm sự phối hợp chặt chẽ giữa các sở, ban, ngành, UBND các xã, phường [5].\n4. Khuyến khích và phát huy sự tham gia chủ động của cộng đồng dân cư, doanh nghiệp, hợp tác xã và các tổ chức xã hội trong quá trình triển khai [5].\n5. Phát triển du lịch sinh thái và du lịch cộng đồng phải gắn với bảo vệ môi trường [5].",
+        "contexts": [
+          "hoạch triển khai cụ thể, huy động và lồng ghép các nguồn lực, từng bước đưa du\nlịch sinh thái và du lịch cộng đồng trở thành nhóm sản phẩm quan trọng trong hệ\nthống sản phẩm du lịch của thành phố.\n2. Yêu cầu\n- Việc triển khai Kế hoạch phải đảm bảo thiết thực, hiệu quả, có trọng tâm,\ntrọng điểm, phù hợp với điều kiện thực tế của từng địa phương; tránh dàn trải,\nhình thức.\n- Xác định rõ mục tiêu, nội dung công việc, lộ trình thực hiện trong phạm",
+          "vi năm 2026, gắn trách nhiệm cụ thể cho từng cơ quan, đơn vị, địa phương.\n- Bảo đảm sự phối hợp chặt chẽ giữa các sở, ban, ngành, UBND các xã,\nphường; đồng thời khuyến khích và phát huy sự tham gia chủ động của cộng\nđồng dân cư, doanh nghiệp, hợp tác xã và các tổ chức xã hội trong quá trình\ntriển khai, góp phần tạo sự đồng thuận, lan tỏa và nâng cao hình ảnh điểm đến\ndu lịch tại địa phương.\n- Việc phát triển du lịch sinh thái và du lịch cộng đồng phải gắn với bảo vệ",
+          "– biển, đầm phá, góp phần nâng cao chất lượng sản phẩm du lịch, tạo sinh kế bền\nvững cho người dân và đóng góp tích cực vào phát triển kinh tế – xã hội của\nthành phố.\n2. Mục tiêu cụ thể\n- Hình thành 04 cụm du lịch sinh thái, du lịch cộng đồng theo không gian\nsinh thái đặc trưng trên địa bàn thành phố: ven sông – ven đô; đầm phá – biển;\nmiền núi – sinh thái rừng; nông nghiệp – làng quê.\n- Rà soát, lựa chọn và tổ chức triển khai du lịch sinh thái, du lịch cộng đồng",
+          "và các hạng mục thiết yếu khác).\n- Các địa phương chủ động rà soát nhu cầu, đăng ký nhiệm vụ triển khai\nchính sách hỗ trợ phát triển du lịch cộng đồng giai đoạn 2026–2030; hỗ trợ\nngười dân phát triển du lịch sinh thái, du lịch cộng đồng, ưu tiên đầu tư các hạng\nmục tại các mô hình điểm như: homestay, biển hiệu, bảng chỉ dẫn, chỉnh trang\ncảnh quan, nhà vệ sinh đạt chuẩn, khu trải nghiệm, không gian đón khách và các\nhạng mục thiết yếu khác",
+          "III. NHIỆM VỤ VÀ GIẢI PHÁP CHỦ YẾU GIAI ĐOẠN 2026–2027\n1. Hoàn thiện cơ chế, chính sách và huy động nguồn lực\n- Triển khai chính sách hỗ trợ phát triển du lịch cộng đồng giai đoạn 2026–\n2030, các địa phương chủ động bố trí kinh phí, rà soát nhu cầu hỗ trợ người dân\nphát triển du lịch sinh thái, du lịch cộng đồng; trong đó tập trung hỗ trợ đầu tư\nquy mô nhỏ tại các mô hình điểm (homestay, biển hiệu, bảng chỉ dẫn, chỉnh\ntrang cảnh quan, nhà vệ sinh đạt chuẩn, khu trải nghiệm, không gian đón khách"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0006",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0007",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0009",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0020",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0019"
+        ],
+        "configuration": "dense-only",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.4594445311790522,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999998
+        }
+      }
+    ]
+  },
+  "config_b": {
+    "name": "hybrid-rrf",
+    "metrics": {
+      "faithfulness": 0.9375,
+      "answer_relevancy": 0.6161,
+      "context_recall": 1.0,
+      "llm_context_precision_with_reference": 0.9142
+    },
+    "per_case": [
+      {
+        "id": "heritage-01",
+        "question": "Quần thể Di tích Cố đô Huế được UNESCO công nhận là Di sản văn hóa thế giới vào ngày nào và theo những tiêu chí nào?",
+        "expected_answer": "Quần thể Di tích Cố đô Huế được UNESCO công nhận ngày 11 tháng 12 năm 1993 theo tiêu chí (iii) và (iv).",
+        "expected_context": "ngày 11 tháng 12 năm 1993 đã công nhận Khu Di tích cố đô Huế là Di sản văn hóa thế giới với tiêu chí (iii)",
+        "answer": "Quần thể Di tích cố đô Huế được UNESCO công nhận là Di sản văn hóa thế giới vào ngày 11 tháng 12 năm 1993, với tiêu chí (iii) là \"Huế thể hiện là một bằng chứng nổi bật của quyền lực phong kiến Việt Nam đã mất mà đỉnh cao của nó vào đầu thế kỷ XIX\" và tiêu chí (iv) là \"Quần thể di tích Huế là một ví dụ nổi bật của một kinh đô phong kiến phương Đông\" [1].",
+        "contexts": [
+          "# Quần thể Di tích cố đô Huế\n\nHội nghị lần thứ 17 của Ủy ban Di sản Thế giới họp tại Cartagena (Colombia) ngày 11 tháng 12 năm 1993 đã công nhận Khu Di tích cố đô Huế là Di sản văn hóa thế giới với tiêu chí (iii): Huế thể hiện là một bằng chứng nổi bật của quyền lực phong kiến Việt Nam đã mất mà đỉnh cao của nó vào đầu thế kỷ XIX, và tiêu chuẩn (iv): Quần thể di tích Huế là một ví dụ nổi bật của một kinh đô phong kiến phương Đông.",
+          "Với những giá trị lịch sử, văn hóa và khoa học đặc biệt của di tích, Thủ tướng Chính phủ đã quyết định xếp hạng Di tích lịch sử và kiến trúc nghệ thuật Quần thể kiến trúc Cố đô Huế là di tích quốc gia đặc biệt (Quyết định số 1272/QĐ-TTg, ngày 12/08/2009).\n\n**Cảnh Toàn (Theo Hồ sơ xếp hạng di tích, tư liệu Cục Di sản văn hóa)**",
+          "và đáp ứng ít nhất một trong các tiêu chí quy định tại Điều 22 của Luật này.\n\n2. Di tích được UNESCO xem xét, công nhận là di sản thế giới bao gồm:\n\na) Di sản văn hóa thế giới là di tích tiêu biểu của Việt Nam có giá trị nổi bật\n\ntoàn cầu về văn hóa;\n\nb) Di sản thiên nhiên thế giới là di tích tiêu biểu của Việt Nam có giá trị nổi\n\nbật toàn cầu về thiên nhiên;\n\nc) Di sản thế giới hỗn hợp là di tích tiêu biểu của Việt Nam đáp ứng được",
+          "Ngày nay, Huế trở thành một thành phố Festival tổ chức hai năm một lần. Huế là một di sản văn hóa độc đáo của Việt Nam và thế giới. Ngày 7 tháng 11 năm 2003, Âm nhạc cung đình Huế: Nhã nhạc (triều Nguyễn) đã được UNESCO ghi tên vào danh mục Các Kiệt tác Di sản phi vật thể của nhân loại.",
+          "# Thơ văn trên kiến trúc cung đình Huế\n\nNgày 19/5/2016, Ủy ban di sản ký ức thế giới vinh danh thơ văn trên kiến trúc cung đình Huế là di sản tư liệu thế giới thuộc khu vực Châu Á - Thái Bình Dương đã khẳng định giá trị nhiều mặt, xứng đáng được tôn vinh và bảo tồn bền vững di sản này ở Việt Nam và trên toàn thế giới.\n\n**1.** **Giá trị nổi bật của Di sản tư liệu**"
+        ],
+        "source_ids": [
+          "news/article_01::chunk-0000",
+          "news/article_02::chunk-0012",
+          "legal/van_ban_hop_nhat_51_2026_luat_di_san_van_hoa::chunk-0117",
+          "news/article_01::chunk-0007",
+          "news/article_05::chunk-0000"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.5499248555736717,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.9999999999
+        }
+      },
+      {
+        "id": "heritage-02",
+        "question": "Ba vòng thành lồng vào nhau ở Huế gồm những gì?",
+        "expected_answer": "Ba vòng thành là Kinh thành Huế, Hoàng thành Huế và Tử cấm thành.",
+        "expected_context": "Đó là Kinh thành Huế, Hoàng thành Huế, Tử cấm thành, ba vòng thành lồng vào nhau",
+        "answer": "Ba vòng thành lồng vào nhau ở Huế gồm Kinh thành Huế, Hoàng thành Huế và Tử cấm thành Huế [1].",
+        "contexts": [
+          "Nằm giữa lòng Huế, bên bờ Bắc của sông Hương chảy xuyên qua từ Tây sang Đông, hệ thống kiến trúc biểu thị cho quyền uy của chế độ trung ương tập quyền Nguyễn vẫn đang sừng sững trước bao biến động của thời gian. Đó là Kinh thành Huế, Hoàng thành Huế, Tử cấm thành Huế, ba vòng thành lồng vào nhau được bố trí đăng đối trên một trục dọc xuyên suốt từ mặt Nam ra mặt Bắc.",
+          "*Kinh thành Huế:*được khởi công xây dựng từ năm 1805, hoàn thành năm 1832, nằm bên bờ Bắc của sông Hương, quay mặt về hướng Nam, gồm ba toà thành lồng vào nhau, được bố trí đăng đối trên một trục dọc, xuyên suốt từ mặt Nam ra mặt Bắc, xung quanh có 10 cửa chính và hệ thống vọng canh, hào nước…\n\n*Đại nội (Hoàng thành, Hoàng cung):* nằm giữa trục chính của Kinh thành Huế, bao gồm các khu vực chính như sau:\n\n- Khu vực phòng vệ gồm: hệ thống hồ Kim thủy (hào), tường bao bọc và 10 cây cầu.",
+          "Hoàng thành giới hạn bởi một vòng tường thành gần vuông mỗi chiều xấp xỉ 600m với 4 cổng ra vào mà độc đáo nhất thường được lấy làm biểu tượng của Cố đô: Ngọ Môn, chính là khu vực hành chính tối cao của triều đình Nguyễn. Bên trong Hoàng thành, hơi dịch về phía sau, là Tử cấm thành - nơi ăn ở sinh hoạt của Hoàng gia.",
+          "Xuyên suốt cả ba tòa thành, con đường Thần đạo chạy từ bờ sông Hương mang trên mình những công trình kiến trúc quan yếu nhất của Kinh thành Huế: Nghinh Lương Đình, Phu Văn Lâu, Kỳ Đài, Ngọ Môn, điện Thái Hòa, điện Cần Chánh, điện Càn Thành, cung Khôn Thái, lầu Kiến Trung... Hai bên đường Thần đạo này là hàng trăm công trình kiến trúc lớn nhỏ bố trí cân đối đều đặn, đan xen cây cỏ, chập chờn khi ẩn khi hiện giữa những sắc màu thiên nhiên, luôn tạo cho con người một cảm giác nhẹ nhàng thanh thản.",
+          "Trong gần 400 năm (1558-1945), Huế đã từng là Thủ phủ của 9 đời chúa Nguyễn ở Đàng Trong, là Kinh đô của triều đại Tây Sơn, rồi đến Kinh đô của quốc gia thống nhất dưới 13 triều vua Nguyễn. Nói đến Huế, người ta nghĩ ngay đến những thành quách, cung điện vàng son, những đền đài miếu vũ lộng lẫy, những lăng tẩm uy nghiêm, những danh lam cổ tự trầm tư u tịch, những thắng tích thiên nhiên thợ trời khéo tạc..."
+        ],
+        "source_ids": [
+          "news/article_01::chunk-0002",
+          "news/article_02::chunk-0004",
+          "news/article_01::chunk-0003",
+          "news/article_01::chunk-0004",
+          "news/article_01::chunk-0001"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.8256105847496947,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.9999999999666667
+        }
+      },
+      {
+        "id": "heritage-03",
+        "question": "Ngọ Môn được xây dựng vào năm nào và có đặc điểm nào ở phía trên?",
+        "expected_answer": "Ngọ Môn được xây dựng vào năm Minh Mạng thứ 14 (1833); phía trên có lầu Ngũ Phụng.",
+        "expected_context": "Ngọ môn: là cổng chính phía Nam của Hoàng thành, được xây dựng vào năm Minh Mạng thứ 14 (1833), phía trên có lầu Ngũ Phụng",
+        "answer": "Ngọ Môn được xây dựng vào năm Minh Mạng thứ 14 (1833) và phía trên có lầu Ngũ Phụng, là nơi xưa kia triều đình tổ chức nghi lễ [1].",
+        "contexts": [
+          "- Khu vực phủ Nội vụ gồm: nhà kho lưu giữ đồ quý, xưởng thủ công mỹ nghệ chế tạo đồ vàng, bạc, ngọc, ngà, gấm, vóc.\n\n- Khu vực vườn Cơ Hạ và điện Khâm Văn: là nơi học tập và chơi đùa của các Hoàng tử khi chưa xuất phủ.\n\n- Khu vực Tử Cấm Thành: là chốn cung cấm, dành riêng cho Vua và hoàng gia ăn ở, sinh hoạt.\n\n*Ngọ môn:* là cổng chính phía Nam của Hoàng thành, được xây dựng vào năm Minh Mạng thứ 14 (1833), phía trên có lầu Ngũ Phụng, là nơi xưa kia triều đình tổ chức nghi lễ.",
+          "Hoàng thành giới hạn bởi một vòng tường thành gần vuông mỗi chiều xấp xỉ 600m với 4 cổng ra vào mà độc đáo nhất thường được lấy làm biểu tượng của Cố đô: Ngọ Môn, chính là khu vực hành chính tối cao của triều đình Nguyễn. Bên trong Hoàng thành, hơi dịch về phía sau, là Tử cấm thành - nơi ăn ở sinh hoạt của Hoàng gia.",
+          "*Đàn Nam Giao:*ở phía Nam của Kinh thành Huế, được xây dựng vào năm 1807. Đàn có mặt bằng hình chữ nhật, chiều dài 390m, chiều rộng 265m, gồm các hạng mục: Đàn tế, Trai cung, Thần trù, Thần khố...\n\n*Văn Miếu:*ở bờ Bắc của sông Hương, cách chùa Thiên Mụ khoảng 500m về phía Tây, được xây dựng năm 1808, để thờ Khổng Tử. Văn Miếu quay mặt về hướng Nam, bao gồm các hạng mục: Văn miếu, Đông vu, Tây vu và dãy nhà bia.",
+          "*Hổ Quyền:*ở địa phận xã [Thủy Biều](http://vi.wikipedia.org/wiki/Th%E1%BB%A7y_Bi%E1%BB%81u \"Thủy Biều\"), xây dựng năm 1830. Đây là một đấu trường có mặt bằng hình vành khăn, gồm hai vòng tường gạch (ở trong và ngoài), xung quanh trổ chuồng cọp và cửa vòm cho voi ra vào, phía trên là khán đài.",
+          "- Lăng Minh Mạng (Hiếu lăng): trên núi Cẩm Khê, xã Hương Thọ, đựợc xây dựng từ năm 1840, hoàn thành năm 1843, bao gồm các hạng mục: tẩm điện, Tam tài sơn, lăng mộ, hồ Trừng Minh và Tân Nguyệt...;\n\n- Lăng Tự Đức (Khiêm lăng): ở xã Thủy Xuân, được xây dựng từ năm 1864, hoàn thành năm 1867, bao gồm các hạng mục: La thành và các cổng, Chí Khiêm đường, điện thờ, lăng Lệ Thiên Anh Hoàng hậu, lăng Kiến Phúc, hồ Lưu Khiêm..."
+        ],
+        "source_ids": [
+          "news/article_02::chunk-0006",
+          "news/article_01::chunk-0003",
+          "news/article_02::chunk-0009",
+          "news/article_02::chunk-0010",
+          "news/article_02::chunk-0008"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.8990245145261735,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999995
+        }
+      },
+      {
+        "id": "heritage-04",
+        "question": "Hổ Quyền ở Huế được xây dựng năm nào và là loại công trình gì?",
+        "expected_answer": "Hổ Quyền được xây dựng năm 1830 và là một đấu trường có mặt bằng hình vành khăn.",
+        "expected_context": "Hổ Quyền: ở địa phận xã Thủy Biều, xây dựng năm 1830. Đây là một đấu trường có mặt bằng hình vành khăn",
+        "answer": "Hổ Quyền ở Huế được xây dựng năm 1830 và là một đấu trường có mặt bằng hình vành khăn, gồm hai vòng tường gạch, xung quanh trổ chuồng cọp và cửa vòm cho voi ra vào, phía trên là khán đài [1].",
+        "contexts": [
+          "*Hổ Quyền:*ở địa phận xã [Thủy Biều](http://vi.wikipedia.org/wiki/Th%E1%BB%A7y_Bi%E1%BB%81u \"Thủy Biều\"), xây dựng năm 1830. Đây là một đấu trường có mặt bằng hình vành khăn, gồm hai vòng tường gạch (ở trong và ngoài), xung quanh trổ chuồng cọp và cửa vòm cho voi ra vào, phía trên là khán đài.",
+          "*Đàn Nam Giao:*ở phía Nam của Kinh thành Huế, được xây dựng vào năm 1807. Đàn có mặt bằng hình chữ nhật, chiều dài 390m, chiều rộng 265m, gồm các hạng mục: Đàn tế, Trai cung, Thần trù, Thần khố...\n\n*Văn Miếu:*ở bờ Bắc của sông Hương, cách chùa Thiên Mụ khoảng 500m về phía Tây, được xây dựng năm 1808, để thờ Khổng Tử. Văn Miếu quay mặt về hướng Nam, bao gồm các hạng mục: Văn miếu, Đông vu, Tây vu và dãy nhà bia.",
+          "Vùng đất Huế vốn có lịch sử lâu đời và là nơi giao thoa, hội tụ của nhiều luồng văn hóa, văn minh, mà nổi bật là văn minh Nho giáo từ phương Bắc xuống, văn minh Phật giáo từ phương Nam lên, kết hợp với các yếu tố bản địa Đông Nam Á... Từ năm 1636, Huế đã được lựa chọn để xây dựng làm thủ phủ - kinh đô của Đàng Trong, và từ đó dần dần trở thành một trung tâm văn hóa, chính trị mới ở phía nam Đại Việt",
+          "*Kinh thành Huế:*được khởi công xây dựng từ năm 1805, hoàn thành năm 1832, nằm bên bờ Bắc của sông Hương, quay mặt về hướng Nam, gồm ba toà thành lồng vào nhau, được bố trí đăng đối trên một trục dọc, xuyên suốt từ mặt Nam ra mặt Bắc, xung quanh có 10 cửa chính và hệ thống vọng canh, hào nước…\n\n*Đại nội (Hoàng thành, Hoàng cung):* nằm giữa trục chính của Kinh thành Huế, bao gồm các khu vực chính như sau:\n\n- Khu vực phòng vệ gồm: hệ thống hồ Kim thủy (hào), tường bao bọc và 10 cây cầu.",
+          "Trước hết, phải nói về tính xác thực của hệ thống di sản thơ văn chữ Hán trên kiến trúc cung đình Huế. Bởi, văn tự chữ Hán được chạm khảm trên gỗ ở kiến trúc Huế là những bản gốc duy nhất hiện còn ở hệ thống di tích Cố đô Huế.Trong lịch sử xây dựng và tu sửa các công trình từ triều Nguyễn chưa hề có tư liệu nào đề cấp đến việc thay đổi, chỉnh sửa hay làm mới các văn tự trên di tích"
+        ],
+        "source_ids": [
+          "news/article_02::chunk-0010",
+          "news/article_02::chunk-0009",
+          "news/article_05::chunk-0001",
+          "news/article_02::chunk-0004",
+          "news/article_05::chunk-0009"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.7595470929613527,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.9999999999
+        }
+      },
+      {
+        "id": "nha-nhac-01",
+        "question": "Nhã nhạc thường được trình diễn trong những dịp nào của cung đình?",
+        "expected_answer": "Nhã nhạc được trình diễn trong các cuộc tế lễ, lễ kỷ niệm, ngày lễ tôn giáo và những sự kiện như đăng quang, lễ tang hoặc đón tiếp chính thức.",
+        "expected_context": "được trình diễn trong cung đình Việt Nam vào các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo cũng như các sự kiện đặc biệt",
+        "answer": "Nhã nhạc thường được trình diễn trong các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo, cũng như các sự kiện đặc biệt như lễ đăng quang, lễ tang hoặc những dịp đón tiếp chính thức [1].",
+        "contexts": [
+          "# Nhã nhạc - Âm nhạc cung đình Việt Nam\n\nNhã nhạc, có ý nghĩa \"âm nhạc tao nhã\", ra đời từ thế kỷ thứ XV đến giữa thế kỷ XX, là thể loại âm nhạc được trình diễn trong cung đình Việt Nam vào các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo cũng như các sự kiện đặc biệt như: lễ đăng quang, lễ tang hoặc những dịp đón tiếp chính thức.",
+          "So với Đại nhạc, dàn Tiểu nhạc có bài bản âm nhạc tương đối ổn định hơn và mang màu sắc trang nhã, vui tươi, thường được dùng trong các buổi yến tiệc của triều đình, trong các lễ đại khánh, dịp tết nguyên đán. Nhiều bài bản tiểu nhạc còn có lời ca. Nhạc khí của Tiểu nhạc bao gồm: trống bản, não bạt, mõ sừng trâu, phách tiền, tam âm la, trống chiến, sáo, đàn tam, nhị, tỳ bà và đàn nguyệt",
+          "Đặc trưng của Nhạc cung đình là tính bao trùm đối với tất cả các bộ môn âm nhạc khác, từ Lễ nhạc (dùng vào các cuộc tế lễ lớn nhỏ của cung đình, trong các chùa miếu), nhạc thính phòng, sân khấu, kể cả các vũ điệu, mà mỗi bộ môn đều có những nghệ sĩ thượng thặng chuyên sáng tạo và biểu diễn. Các quy định về quy mô dàn nhạc, cách thức diễn xướng, nội dung bài bản, v.v",
+          "về âm nhạc cung đình qua việc kịp thời thu băng, chụp hình, quay phim những diễn xuất giai điệu, ca từ mà họ trình bày",
+          "Nhã nhạc đã trở thành một phần thiết yếu của nghi lễ cung đình Việt Nam với hàng trăm nghi lễ khác nhau hằng năm. Tuy nhiên, vai trò của Nhã nhạc không chỉ giới hạn ở việc hòa nhạc phục vụ các nghi lễ mà còn cho thấy là một phương tiện giao tiếp và thể hiện lòng tôn kính đối với thần linh và các vua chúa thời phong kiến, cũng như truyền tải được những tư tưởng triết lý và tri thức về vũ trụ của người Việt Nam."
+        ],
+        "source_ids": [
+          "news/article_03::chunk-0000",
+          "news/article_03::chunk-0007",
+          "news/article_03::chunk-0003",
+          "news/article_03::chunk-0016",
+          "news/article_03::chunk-0009"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.7139486705342085,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.7555555555303703
+        }
+      },
+      {
+        "id": "nha-nhac-02",
+        "question": "Nhã nhạc được UNESCO công nhận vào ngày nào?",
+        "expected_answer": "Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm 2003.",
+        "expected_context": "Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm 2003",
+        "answer": "Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm 2003 [1].",
+        "contexts": [
+          "*Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm* *2003.*\n\n**Nguy cơ và thách thức:**",
+          "Ngày nay, Huế trở thành một thành phố Festival tổ chức hai năm một lần. Huế là một di sản văn hóa độc đáo của Việt Nam và thế giới. Ngày 7 tháng 11 năm 2003, Âm nhạc cung đình Huế: Nhã nhạc (triều Nguyễn) đã được UNESCO ghi tên vào danh mục Các Kiệt tác Di sản phi vật thể của nhân loại.",
+          "Nhã nhạc xuất hiện đầu tiên ở Trung Quốc dưới thời nhà Chu (thế kỷ VI - III TCN). Về sau, Nhã nhạc được lan tỏa sang các nước láng giềng như: Nhật Bản, Triều Tiên và Việt Nam. Tuy được xem là tài sản chung nhưng nhã nhạc của mỗi nước đều có điểm riêng biệt. Ở Việt Nam, Nhã nhạc bắt đầu xuất hiện vào thế kỷ XV, nhưng phải đến thời kỳ nhà Nguyễn mới phát triển rực rỡ và đạt đến trình độ uyên bác",
+          "# Nhã nhạc - Âm nhạc cung đình Việt Nam\n\nNhã nhạc, có ý nghĩa \"âm nhạc tao nhã\", ra đời từ thế kỷ thứ XV đến giữa thế kỷ XX, là thể loại âm nhạc được trình diễn trong cung đình Việt Nam vào các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo cũng như các sự kiện đặc biệt như: lễ đăng quang, lễ tang hoặc những dịp đón tiếp chính thức.",
+          "Là thể loại âm nhạc mang đầy đủ các điều kiện, tiêu chí của dòng âm nhạc cộng hưởng giữa dân gian, chuyên nghiệp và bác học của thể loại thính phòng, một thể loại âm nhạc đỉnh cao trong toàn bộ các di sản âm nhạc truyền thống Việt Nam, Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015./."
+        ],
+        "source_ids": [
+          "news/article_03::chunk-0010",
+          "news/article_01::chunk-0007",
+          "news/article_03::chunk-0001",
+          "news/article_03::chunk-0000",
+          "news/article_04::chunk-0019"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.7538271170648692,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999995
+        }
+      },
+      {
+        "id": "nha-nhac-03",
+        "question": "Dàn Đại nhạc dùng trong những lễ nào và có đặc điểm âm lượng ra sao?",
+        "expected_answer": "Dàn Đại nhạc dùng trong các lễ như tế Nam Giao, tế miếu và Đại triều; đây là dàn nhạc có âm lượng lớn.",
+        "expected_context": "Dàn Đại nhạc là dàn nhạc quan trọng trong hệ thống nhạc lễ cung đình Huế, được diễn tấu dưới các trình thức quan trọng",
+        "answer": "Dàn Đại nhạc được sử dụng trong các lễ tế như tế Nam Giao, tế miếu, Đại triều, v.v. Đây là dàn nhạc có âm lượng lớn, chủ yếu là dàn trống và kèn, kèm theo các nhạc cụ gõ và hơi khác [1].",
+        "contexts": [
+          "Dàn Đại nhạc là dàn nhạc quan trọng trong hệ thống nhạc lễ cung đình Huế, được diễn tấu dưới các trình thức quan trọng trong các buổi lễ, thường được dùng trong các lễ tế như: tế Nam Giao, tế miếu, Đại triều, v.v. Đây là dàn nhạc có âm lượng lớn, chủ yếu là dàn trống và kèn, kèm theo các nhạc cụ gõ và hơi khác như: bồng, não bạt (chũm chọe), mõ sừng trâu, trống cơm, kèn bầu, kèn lỡ và trong rất ít trường hợp là đàn nhị.",
+          "So với Đại nhạc, dàn Tiểu nhạc có bài bản âm nhạc tương đối ổn định hơn và mang màu sắc trang nhã, vui tươi, thường được dùng trong các buổi yến tiệc của triều đình, trong các lễ đại khánh, dịp tết nguyên đán. Nhiều bài bản tiểu nhạc còn có lời ca. Nhạc khí của Tiểu nhạc bao gồm: trống bản, não bạt, mõ sừng trâu, phách tiền, tam âm la, trống chiến, sáo, đàn tam, nhị, tỳ bà và đàn nguyệt",
+          "Đặc trưng của Nhạc cung đình là tính bao trùm đối với tất cả các bộ môn âm nhạc khác, từ Lễ nhạc (dùng vào các cuộc tế lễ lớn nhỏ của cung đình, trong các chùa miếu), nhạc thính phòng, sân khấu, kể cả các vũ điệu, mà mỗi bộ môn đều có những nghệ sĩ thượng thặng chuyên sáng tạo và biểu diễn. Các quy định về quy mô dàn nhạc, cách thức diễn xướng, nội dung bài bản, v.v",
+          "# Nhã nhạc - Âm nhạc cung đình Việt Nam\n\nNhã nhạc, có ý nghĩa \"âm nhạc tao nhã\", ra đời từ thế kỷ thứ XV đến giữa thế kỷ XX, là thể loại âm nhạc được trình diễn trong cung đình Việt Nam vào các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo cũng như các sự kiện đặc biệt như: lễ đăng quang, lễ tang hoặc những dịp đón tiếp chính thức.",
+          "Nhạc khí dùng trong Nhạc cung đình được \"chế tạo tinh vi, chạm cẩn khéo léo, tinh xảo hơn nhạc khí dùng trong dân gian, lại có đầy đủ màu âm: tiếng kim, tiếng thổ, tiếng trong, tiếng đục, tiếng trầm, tiếng bổng, tiếng tơ, tiếng trúc, tiếng da, tiếng đá (khánh), tiếng đồng. Về độ cao có tiếng trầm của dây đài đàn tỳ bà, tiếng cao vút vi vu của tiếng sáo\"\\*."
+        ],
+        "source_ids": [
+          "news/article_03::chunk-0006",
+          "news/article_03::chunk-0007",
+          "news/article_03::chunk-0003",
+          "news/article_03::chunk-0000",
+          "news/article_03::chunk-0005"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.6018826590735707,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.8055555555287036
+        }
+      },
+      {
+        "id": "ca-hue-01",
+        "question": "Ca Huế được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo quyết định nào?",
+        "expected_answer": "Ca Huế được đưa vào Danh mục theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015.",
+        "expected_context": "Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL",
+        "answer": "Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015 [1].",
+        "contexts": [
+          "Là thể loại âm nhạc mang đầy đủ các điều kiện, tiêu chí của dòng âm nhạc cộng hưởng giữa dân gian, chuyên nghiệp và bác học của thể loại thính phòng, một thể loại âm nhạc đỉnh cao trong toàn bộ các di sản âm nhạc truyền thống Việt Nam, Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015./.",
+          "c) Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch xem xét, trình Thủ tướng Chính\nphủ quyết định đề nghị UNESCO ghi danh, ghi danh bổ sung di sản văn hóa phi vật\nthể của Việt Nam theo hồ sơ khoa học di sản văn hóa phi vật thể, đề nghị của Ủy ban\n\n\n14",
+          "c) Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch xem xét, quyết định ghi danh,\nghi danh bổ sung, công bố và cấp bằng ghi danh, ghi danh bổ sung di sản văn hóa\nphi vật thể được đưa vào Danh mục quốc gia về di sản văn hoá phi vật thể theo\nhồ sơ khoa học di sản văn hóa phi vật thể, đề nghị của Ủy ban nhân dân cấp tỉnh\nvà ý kiến thẩm định của Hội đồng thẩm định do Bộ trưởng Bộ Văn hóa, Thể thao\nvà Du lịch thành lập.\n\n2. Việc ghi danh, ghi danh bổ sung di sản văn hóa phi vật thể vào các danh",
+          "Ngày nay, Huế trở thành một thành phố Festival tổ chức hai năm một lần. Huế là một di sản văn hóa độc đáo của Việt Nam và thế giới. Ngày 7 tháng 11 năm 2003, Âm nhạc cung đình Huế: Nhã nhạc (triều Nguyễn) đã được UNESCO ghi tên vào danh mục Các Kiệt tác Di sản phi vật thể của nhân loại.",
+          "Với những giá trị lịch sử, văn hóa và khoa học đặc biệt của di tích, Thủ tướng Chính phủ đã quyết định xếp hạng Di tích lịch sử và kiến trúc nghệ thuật Quần thể kiến trúc Cố đô Huế là di tích quốc gia đặc biệt (Quyết định số 1272/QĐ-TTg, ngày 12/08/2009).\n\n**Cảnh Toàn (Theo Hồ sơ xếp hạng di tích, tư liệu Cục Di sản văn hóa)**"
+        ],
+        "source_ids": [
+          "news/article_04::chunk-0019",
+          "legal/van_ban_hop_nhat_51_2026_luat_di_san_van_hoa::chunk-0078",
+          "legal/van_ban_hop_nhat_51_2026_luat_di_san_van_hoa::chunk-0072",
+          "news/article_01::chunk-0007",
+          "news/article_02::chunk-0012"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.6186678712523811,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.9999999999
+        }
+      },
+      {
+        "id": "ca-hue-02",
+        "question": "Ca Huế có bao nhiêu bài bản hiện còn và các điệu thức chính là gì?",
+        "expected_answer": "Ca Huế hiện còn 31 bài bản; ba điệu thức chính là điệu Bắc, điệu Nam và Nam xuân.",
+        "expected_context": "Ca Huế được xây dựng trên 3 điệu thức chính là điệu Bắc, điệu Nam và Nam xuân",
+        "answer": "Ca Huế hiện còn 31 bài bản, trong đó có 3 điệu thức chính là điệu Bắc, điệu Nam và Nam xuân [1][5].",
+        "contexts": [
+          "Ca Huế hiện còn 31 bài bản, trong đó, 13 bản thuộc điệu Bắc, 5 bài bản theo điệu Nam, 5 bài bản theo điệu Nam Xuân, 2 bài của điệu Bắc (Cổ bản) và điệu Nam (Nam bình) được hát theo hơi dựng, 6 bài bản vẫn còn nhạc phổ bằng Hán tự nhưng chưa được phục dựng.\n\n**Về nghệ thuật ca và âm nhạc của Ca Huế**",
+          "Ca Huế được xây dựng trên 3 điệu thức chính là điệu Bắc, điệu Nam và Nam xuân. Các bài bản mang điệu Bắc có tính chất vui tươi, trong sáng, trang trọng và thuần khiết với 10 bài liên hoàn và 3 bài lẻ. Điệu Nam có 5 bài mang tính chất buồn thương, bi ai, vương vấn; cấu trúc giai điệu có nhiều lớp, luyến láy trong cách ca và có yêu cầu cao về phát âm, nhả chữ, luyến láy thay đổi sắc thái trong từng câu hát",
+          "Các bài bản thuộc hơi dựng là nét đặc biệt độc đáo của Ca Huế với cách ca biến đổi sắc thái, từ hơi ai sang hơi oán dựa trên bài bản một điệu Bắc hay điệu Nam. Hơi dựng không có một hệ thống bài bản riêng như điệu Bắc hoặc điệu Nam, mà nó chỉ là một phong cách đặc biệt của Ca Huế và chỉ có 2 bài ca theo hơi dựng. Đó là bài Cổ bản thuộc điệu Bắc và Nam bình thuộc điệu Nam.",
+          "Ca Huế được các nghệ nhân tài danh sáng tạo, bổ sung tạo thành hệ thống bài bản phong phú, với giai điệu hoàn chỉnh mang tính nghệ thuật cao, lời ca giàu chất văn học, kỹ thuật ca hát tinh tế, điêu luyện, nhạc đệm hoàn hảo.\n\n**Về hệ thống bài bản của Ca Huế**",
+          "Ca Huế là loại âm nhạc bác học, chuyên nghiệp có những yêu cầu cao về kỹ thuật ca hát. Người hát Ca Huế và nhạc công Ca Huế phải là những người có năng khiếu về âm nhạc và phải có một quy trình đào tạo lâu dài. Trong Ca Huế, có nhiều loại bài bản, điệu thức, hơi nhạc, nên cũng có nhiều cách hát khác nhau, thể hiện các sắc thái tình cảm của từng bài bản"
+        ],
+        "source_ids": [
+          "news/article_04::chunk-0013",
+          "news/article_04::chunk-0010",
+          "news/article_04::chunk-0012",
+          "news/article_04::chunk-0009",
+          "news/article_04::chunk-0014"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.7065246545735274,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.8666666666377778
+        }
+      },
+      {
+        "id": "poetry-01",
+        "question": "Kiểu trang trí nào kết hợp một ô thơ hoặc đại tự với một bức họa trong kiến trúc cung đình Huế?",
+        "expected_answer": "Đó là kiểu thức “nhất thi nhất họa” hoặc “nhất tự nhất họa”.",
+        "expected_context": "một ô thơ hoặc 1 đại tự đi liền với 1 bức họa tạo nên kiểu thức \"nhất thi nhất họa\" hoặc \"nhất tự nhất họa\"",
+        "answer": "Kiểu trang trí kết hợp một ô thơ hoặc một đại tự với một bức họa trong kiến trúc cung đình Huế được gọi là \"*nhất thi nhất họa*\" hoặc \"*nhất tự nhất họa*\", và gần như đã trở thành một phong cách riêng trong trang trí kiến trúc cung đình thời Nguyễn [1].",
+        "contexts": [
+          ". Các công trình kiến trúc từ Ngọ Môn, điện Thái Hòa, điện Cần Chánh, Triệu Miếu, Hưng Tổ Miếu, Thế Tổ Miếu, chùa Thiên Mụ… đều sử dụng văn thơ để trang trí trên liên ba, đố bản, cổ diềm ở cả nội và ngoại thất công trình. Và cách trang trí 1 ô thơ hoặc 1 đại tự đi liền với 1 bức họa tạo nên kiểu thức \"*nhất thi nhất họa*\" hoặc \"*nhất tự nhất họa*\" gần như đã trở thành một phong cách riêng trong trang trí kiến trúc cung đình thời Nguyễn",
+          ". Một ô thơ đi kèm với một ô họa khắc những đề tài truyền thống thuần túy Việt Nam như bát bửu, hoa lá, trái cây, rồng, hạc, đầu rồng, dây lá… Nội dung của những ô họa chỉ mang tính chất trang trí, không minh họa cho nội dung của những ô thơ đi kèm với nó. Trải qua một thời gian dài, sự tàn phá của chiến tranh, các thảm họa thiên nhiên và con người, Cố đô Huế còn bảo lưu được một khối lượng rất lớn thơ văn trên các di tích kiến trúc này",
+          ". Theo thống kê hiện nay, trên các di tích kiến trúc cung đình có tổng số 2679 ô thơ văn và cũng có chừng đó ô họa được chạm khắc, sơn thếp, cẩn xà cừ trên gỗ, trên pháp lam và đắp ngõa sành sứ. Đây thật sự là một bảo tàng sống động về văn chương của triều Nguyễn.",
+          "Đây là một di sản tư liệu chân xác hàm chứa một nội dung giá trị được lưu giữ bằng những tác phẩm nghệ thuật vô giá: những bức tranh, những bức thư pháp được các nghệ nhân tài hoa chạm khảm trên một loại gỗ quý và bền như sắt thép (lim: thiết mộc) để trang hoàng làm tôn vinh giá trị của các công trình kiến trúc cung đình Huế.\n\n**2. Bảo tồn và phát huy giá trị thơ văn trên kiến trúc cung đình Huế**",
+          "Trước hết, phải nói về tính xác thực của hệ thống di sản thơ văn chữ Hán trên kiến trúc cung đình Huế. Bởi, văn tự chữ Hán được chạm khảm trên gỗ ở kiến trúc Huế là những bản gốc duy nhất hiện còn ở hệ thống di tích Cố đô Huế.Trong lịch sử xây dựng và tu sửa các công trình từ triều Nguyễn chưa hề có tư liệu nào đề cấp đến việc thay đổi, chỉnh sửa hay làm mới các văn tự trên di tích"
+        ],
+        "source_ids": [
+          "news/article_05::chunk-0004",
+          "news/article_05::chunk-0007",
+          "news/article_05::chunk-0008",
+          "news/article_05::chunk-0015",
+          "news/article_05::chunk-0009"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.6248406086048015,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.999999999975
+        }
+      },
+      {
+        "id": "plan-275-01",
+        "question": "Kế hoạch 275/KH-UBND của Huế được ban hành ngày nào và triển khai đề án cho giai đoạn nào?",
+        "expected_answer": "Kế hoạch 275/KH-UBND ban hành ngày 25 tháng 6 năm 2025, triển khai đề án phát triển du lịch và dịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045.",
+        "expected_context": "Số: 275 /KH-UBND Huế, ngày 25 tháng 6 năm 2025",
+        "answer": "Kế hoạch 275/KH-UBND của Huế được ban hành ngày 25 tháng 6 năm 2025 và triển khai đề án cho giai đoạn 2025–2030, tầm nhìn đến năm 2045 [2].",
+        "contexts": [
+          "đoạn 2026 – 2027 với những nội dung sau:\nI. MỤC ĐÍCH, YÊU CẦU\n1. Mục đích\n- Cụ thể hóa và tổ chức triển khai hiệu quả Kế hoạch số 275/KH-UBND\nngày 25/6/2025 của UBND thành phố về thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045” và\nKế hoạch số 157/KH-UBND ngày 08/4/2025 về phát triển du lịch cộng đồng\ngiai đoạn 2025–2030; đồng thời định hướng phát triển du lịch sinh thái, du lịch",
+          "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nTHÀNH PHỐ HUẾ Độc lập - Tự do - Hạnh phúc\nSố: 188 /KH-UBND Huế, ngày 02 tháng 4 năm 2026\nKẾ HOẠCH\nPhát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế\ngiai đoạn 2026 – 2027\nThực hiện Kế hoạch số 275/KH-UBND ngày 25/6/2025 của UBND thành\nphố về Triển khai thực hiện Đề án “Phát triển du lịch, dịch vụ du lịch thành phố\nHuế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”; Kế hoạch số 157/KH-",
+          "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nTHÀNH PHỐ HUẾ Độc lập - Tự do - Hạnh phúc\nSố: 275 /KH-UBND Huế, ngày 25 tháng 6 năm 2025\nKẾ HOẠCH\nTriển khai thực hiện Đề án “Phát triển du lịch, dịch vụ du lịch\nthành phố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”\nCăn cứ Nghị quyết số 37-NQ/TU ngày 22/4/2025 của Hội nghị lần thứ\nmười tám Ban Chấp hành Đảng bộ thành phố Khóa XVI về phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025 - 2030, tầm nhìn đến năm 2045;",
+          "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19/6/2025 của Ủy ban nhân dân\nthành phố Huế về việc phê duyệt Đề án “Phát triển du lịch, dịch vụ du lịch thành\nphố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”. Ủy ban nhân dân\nthành phố Huế ban hành Kế hoạch triển khai thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”\nvới những nội dung chủ yếu tập trung cho giai đoạn 2025-2030 như sau:\nI. MỤC TIÊU\n1. Mục tiêu chung",
+          "DANH MỤC NỘI DUNG PHÁT TRIỂN DU LỊCH SINH THÁI, DU LỊCH CỘNG ĐỒNG\nTHÀNH PHỐ HUẾ GIAI ĐOẠN 2026 – 2027\n(Kèm theo Kế hoạch số:  188  /KH-UBND ngày 02  tháng 4 năm 2026 của UBND thành phố Huế)\n| STT |     |     | Địa điểm  | Đơn vị  | Đơn vị  | Nguồn  | Thời gian  |\n| --- | --- | --- | --------- | ------- | ------- | ------ | ---------- |\nNội dung nhiệm vụ\n|     |     |                                                    |     | chủ trì | phối hợp | Kinh phí | thực hiện |"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0000",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0001",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0068"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.6598822115247018,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.999999999975
+        }
+      },
+      {
+        "id": "plan-275-02",
+        "question": "Đến năm 2030, Kế hoạch 275 định hướng vị thế du lịch Huế như thế nào?",
+        "expected_answer": "Đến năm 2030, du lịch Huế được định hướng là ngành kinh tế mũi nhọn và là điểm đến hấp dẫn, an toàn, thân thiện thuộc nhóm dẫn đầu cả nước.",
+        "expected_context": "Đến năm 2030, du lịch Huế thật sự là ngành kinh tế mũi nhọn, là điểm đến hấp dẫn, an toàn, thân thiện thuộc nhóm dẫn đầu cả nước",
+        "answer": "Tôi không thể xác minh thông tin này từ nguồn hiện có.",
+        "contexts": [
+          "đoạn 2026 – 2027 với những nội dung sau:\nI. MỤC ĐÍCH, YÊU CẦU\n1. Mục đích\n- Cụ thể hóa và tổ chức triển khai hiệu quả Kế hoạch số 275/KH-UBND\nngày 25/6/2025 của UBND thành phố về thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045” và\nKế hoạch số 157/KH-UBND ngày 08/4/2025 về phát triển du lịch cộng đồng\ngiai đoạn 2025–2030; đồng thời định hướng phát triển du lịch sinh thái, du lịch",
+          "Căn cứ Quyết định số 1749/QĐ-UBND ngày 19/6/2025 của Ủy ban nhân dân\nthành phố Huế về việc phê duyệt Đề án “Phát triển du lịch, dịch vụ du lịch thành\nphố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”. Ủy ban nhân dân\nthành phố Huế ban hành Kế hoạch triển khai thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”\nvới những nội dung chủ yếu tập trung cho giai đoạn 2025-2030 như sau:\nI. MỤC TIÊU\n1. Mục tiêu chung",
+          "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nTHÀNH PHỐ HUẾ Độc lập - Tự do - Hạnh phúc\nSố: 275 /KH-UBND Huế, ngày 25 tháng 6 năm 2025\nKẾ HOẠCH\nTriển khai thực hiện Đề án “Phát triển du lịch, dịch vụ du lịch\nthành phố Huế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”\nCăn cứ Nghị quyết số 37-NQ/TU ngày 22/4/2025 của Hội nghị lần thứ\nmười tám Ban Chấp hành Đảng bộ thành phố Khóa XVI về phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025 - 2030, tầm nhìn đến năm 2045;",
+          "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nTHÀNH PHỐ HUẾ Độc lập - Tự do - Hạnh phúc\nSố: 188 /KH-UBND Huế, ngày 02 tháng 4 năm 2026\nKẾ HOẠCH\nPhát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế\ngiai đoạn 2026 – 2027\nThực hiện Kế hoạch số 275/KH-UBND ngày 25/6/2025 của UBND thành\nphố về Triển khai thực hiện Đề án “Phát triển du lịch, dịch vụ du lịch thành phố\nHuế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”; Kế hoạch số 157/KH-",
+          "UBND ngày 14/3/2025 của Ủy ban nhân dân thành phố Huế về phát triển du\nlịch cộng đồng trên địa bàn thành phố đến năm 2030. Nhằm cụ thể hóa mục tiêu\nphát triển du lịch sinh thái, du lịch cộng đồng gắn với khai thác tiềm năng tự\nnhiên, văn hóa bản địa và góp phần phát triển kinh tế - xã hội bền vững tại các\nxã phường trên địa bàn thành phố Huế, Ủy ban nhân dân thành phố Huế ban\nhành Kế hoạch phát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế giai"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0001",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0001"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 0.0,
+          "answer_relevancy": 0.0,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999998
+        }
+      },
+      {
+        "id": "plan-275-03",
+        "question": "Kế hoạch 275 khuyến khích người dân địa phương tham gia du lịch bằng những hoạt động nào?",
+        "expected_answer": "Kế hoạch khuyến khích người dân tham gia qua homestay, làm hướng dẫn viên địa phương và bán sản phẩm thủ công.",
+        "expected_context": "Khuyến khích người dân tham gia vào các hoạt động du lịch, như homestay, hướng dẫn viên địa phương và bán sản phẩm thủ công",
+        "answer": "Kế hoạch 275 khuyến khích người dân địa phương tham gia vào các hoạt động du lịch như homestay, hướng dẫn viên địa phương và bán sản phẩm thủ công. Bên cạnh đó, còn tổ chức các lễ hội, sự kiện văn hóa để thu hút khách du lịch và bảo tồn các giá trị truyền thống [3].",
+        "contexts": [
+          "5\n- Chủ động lồng ghép, huy động hiệu quả các nguồn lực từ Chương trình\nmục tiêu quốc gia xây dựng nông thôn mới, Chương trình OCOP, Chương trình\ngiảm nghèo bền vững và Chương trình phát triển kinh tế - xã hội vùng đồng bào\ndân tộc thiểu số để đầu tư hạ tầng, nâng cao chất lượng sản phẩm và hỗ trợ cộng\nđồng tham gia du lịch.\n- Khuyến khích thành lập tổ hợp tác, hợp tác xã du lịch cộng đồng tại các\nđịa bàn có điều kiện thuận lợi như Kim Long, Thủy Xuân, Đan Điền, A Lưới",
+          "vi năm 2026, gắn trách nhiệm cụ thể cho từng cơ quan, đơn vị, địa phương.\n- Bảo đảm sự phối hợp chặt chẽ giữa các sở, ban, ngành, UBND các xã,\nphường; đồng thời khuyến khích và phát huy sự tham gia chủ động của cộng\nđồng dân cư, doanh nghiệp, hợp tác xã và các tổ chức xã hội trong quá trình\ntriển khai, góp phần tạo sự đồng thuận, lan tỏa và nâng cao hình ảnh điểm đến\ndu lịch tại địa phương.\n- Việc phát triển du lịch sinh thái và du lịch cộng đồng phải gắn với bảo vệ",
+          "mạnh kết nối với doanh nghiệp lữ hành để xây dựng các tour trải nghiệm sinh\nthái – cộng đồng gắn với hệ thống sản phẩm du lịch văn hóa – di sản của Huế;\nkhuyến khích sự tham gia của cộng đồng địa phương, hợp tác xã và doanh\nnghiệp trong hoạt động quảng bá, góp phần phát triển thị trường du lịch bền\nvững.\n- Khuyến khích sự tham gia của cộng đồng, hợp tác xã và doanh nghiệp địa\nphương trong hoạt động truyền thông, quảng bá; thúc đẩy hợp tác công – tư, mở",
+          "3\n- Ban hành cơ chế, chính sách đặc thù hỗ trợ cho người dân và doanh\nnghiệp đầu tư phát triển dịch vụ du lịch gắn với Khu dịch vụ - du lịch ở các\nphường nội thành và phố cổ Gia Hội, Bao Vinh.\n- Xây dựng chính sách ưu đãi về thuế nhằm khuyến khích các dự án đầu tư\nphát triển du lịch xanh gắn với bảo tồn tự nhiên và văn hóa; quy định về xây\ndựng hệ thống xử lý nước thải, thu gom, tái chế chất thải trong các cơ sở kinh\ndoanh; cơ chế khuyến khích doanh nghiệp sử dụng vật liệu thân thiện môi",
+          "phẩm, điểm đến trên được tổ chức thường xuyên, tăng tính trải nghiệm cho du\nkhách, nhất là các sản phẩm về ẩm thực truyền thống, làm hươn, đan lát.\n- Tăng cường sự tham gia của cộng đồng địa phương: Khuyến khích người\ndân tham gia vào các hoạt động du lịch, như homestay, hướng dẫn viên địa\nphương và bán sản phẩm thủ công. Bảo tồn và phát huy văn hóa bản địa: Tổ\nchức các lễ hội, sự kiện văn hóa để thu hút khách du lịch, đồng thời bảo tồn các\ngiá trị truyền thống."
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0021",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0007",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0035",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0012",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0033"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.617056582810407,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.19999999998
+        }
+      },
+      {
+        "id": "plan-188-01",
+        "question": "Kế hoạch 188/KH-UBND tập trung phát triển loại hình du lịch nào và trong giai đoạn nào?",
+        "expected_answer": "Kế hoạch 188 tập trung phát triển du lịch sinh thái và du lịch cộng đồng thành phố Huế giai đoạn 2026–2027.",
+        "expected_context": "Phát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế giai đoạn 2026 – 2027",
+        "answer": "Kế hoạch 188/KH-UBND tập trung phát triển du lịch sinh thái và du lịch cộng đồng trong giai đoạn 2026–2027 [1].",
+        "contexts": [
+          "ỦY BAN NHÂN DÂN CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nTHÀNH PHỐ HUẾ Độc lập - Tự do - Hạnh phúc\nSố: 188 /KH-UBND Huế, ngày 02 tháng 4 năm 2026\nKẾ HOẠCH\nPhát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế\ngiai đoạn 2026 – 2027\nThực hiện Kế hoạch số 275/KH-UBND ngày 25/6/2025 của UBND thành\nphố về Triển khai thực hiện Đề án “Phát triển du lịch, dịch vụ du lịch thành phố\nHuế giai đoạn 2025 – 2030, tầm nhìn đến năm 2045”; Kế hoạch số 157/KH-",
+          "đoạn 2026 – 2027 với những nội dung sau:\nI. MỤC ĐÍCH, YÊU CẦU\n1. Mục đích\n- Cụ thể hóa và tổ chức triển khai hiệu quả Kế hoạch số 275/KH-UBND\nngày 25/6/2025 của UBND thành phố về thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045” và\nKế hoạch số 157/KH-UBND ngày 08/4/2025 về phát triển du lịch cộng đồng\ngiai đoạn 2025–2030; đồng thời định hướng phát triển du lịch sinh thái, du lịch",
+          "DANH MỤC NỘI DUNG PHÁT TRIỂN DU LỊCH SINH THÁI, DU LỊCH CỘNG ĐỒNG\nTHÀNH PHỐ HUẾ GIAI ĐOẠN 2026 – 2027\n(Kèm theo Kế hoạch số:  188  /KH-UBND ngày 02  tháng 4 năm 2026 của UBND thành phố Huế)\n| STT |     |     | Địa điểm  | Đơn vị  | Đơn vị  | Nguồn  | Thời gian  |\n| --- | --- | --- | --------- | ------- | ------- | ------ | ---------- |\nNội dung nhiệm vụ\n|     |     |                                                    |     | chủ trì | phối hợp | Kinh phí | thực hiện |",
+          "III. NHIỆM VỤ VÀ GIẢI PHÁP CHỦ YẾU GIAI ĐOẠN 2026–2027\n1. Hoàn thiện cơ chế, chính sách và huy động nguồn lực\n- Triển khai chính sách hỗ trợ phát triển du lịch cộng đồng giai đoạn 2026–\n2030, các địa phương chủ động bố trí kinh phí, rà soát nhu cầu hỗ trợ người dân\nphát triển du lịch sinh thái, du lịch cộng đồng; trong đó tập trung hỗ trợ đầu tư\nquy mô nhỏ tại các mô hình điểm (homestay, biển hiệu, bảng chỉ dẫn, chỉnh\ntrang cảnh quan, nhà vệ sinh đạt chuẩn, khu trải nghiệm, không gian đón khách",
+          "Giang – Văn hóa làng chài và sinh kế ngư nghiệp;(3) Vùng Miền núi – Sinh thái\nsuối thác – Văn hóa dân tộc bản địa; (4) Vùng Nông nghiệp sinh thái – Làng quê\n– Trải nghiệm OCOP; nhằm phục vụ công tác quản lý, quy hoạch và kết nối tour\ntuyến.\n- Ưu tiên đầu tư, nâng cấp hạ tầng thiết yếu tại các mô hình điểm thuộc các\nđịa bàn trọng tâm như Kim Long, Thủy Xuân, Thanh Thủy (khu vực ven sông);\nĐan Điền, Phú Thuận, Phong Quảng (khu vực biển, đầm phá); và các khu vực"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0068",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0019",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0025"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.5411254210802328,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.999999999975
+        }
+      },
+      {
+        "id": "plan-188-02",
+        "question": "Kế hoạch 188 đặt mục tiêu hình thành bao nhiêu cụm du lịch sinh thái, du lịch cộng đồng và theo các không gian nào?",
+        "expected_answer": "Kế hoạch đặt mục tiêu hình thành 4 cụm theo các không gian ven sông–ven đô, đầm phá–biển, miền núi–sinh thái rừng và nông nghiệp–làng quê.",
+        "expected_context": "Hình thành 04 cụm du lịch sinh thái, du lịch cộng đồng theo không gian sinh thái đặc trưng",
+        "answer": "Kế hoạch 188 đặt mục tiêu hình thành 04 cụm du lịch sinh thái, du lịch cộng đồng theo các không gian: ven sông – ven đô; đầm phá – biển; miền núi – sinh thái rừng; nông nghiệp – làng quê [1].",
+        "contexts": [
+          "– biển, đầm phá, góp phần nâng cao chất lượng sản phẩm du lịch, tạo sinh kế bền\nvững cho người dân và đóng góp tích cực vào phát triển kinh tế – xã hội của\nthành phố.\n2. Mục tiêu cụ thể\n- Hình thành 04 cụm du lịch sinh thái, du lịch cộng đồng theo không gian\nsinh thái đặc trưng trên địa bàn thành phố: ven sông – ven đô; đầm phá – biển;\nmiền núi – sinh thái rừng; nông nghiệp – làng quê.\n- Rà soát, lựa chọn và tổ chức triển khai du lịch sinh thái, du lịch cộng đồng",
+          "tầng kỹ thuật, điều kiện môi trường và khả năng khai thác du lịch tại các xã,\nphường trên địa bàn Huế; trên cơ sở đó lựa chọn các địa bàn có tiềm năng để\nxây dựng mô hình du lịch sinh thái, du lịch cộng đồng và ưu tiên đầu tư trong\ngiai đoạn 2026–2027.\n- Xây dựng cơ sở dữ liệu và bản đồ số các điểm du lịch sinh thái, du lịch\ncộng đồng theo 04 cụm không gian phát triển du lịch gồm: (1) Vùng Di sản –\nSông Hương – Làng nghề, Nhà vườn Huế; (2) Vùng Biển – Đầm phá Tam",
+          "và các hạng mục thiết yếu khác).\n- Các địa phương chủ động rà soát nhu cầu, đăng ký nhiệm vụ triển khai\nchính sách hỗ trợ phát triển du lịch cộng đồng giai đoạn 2026–2030; hỗ trợ\nngười dân phát triển du lịch sinh thái, du lịch cộng đồng, ưu tiên đầu tư các hạng\nmục tại các mô hình điểm như: homestay, biển hiệu, bảng chỉ dẫn, chỉnh trang\ncảnh quan, nhà vệ sinh đạt chuẩn, khu trải nghiệm, không gian đón khách và các\nhạng mục thiết yếu khác",
+          "hoạch triển khai cụ thể, huy động và lồng ghép các nguồn lực, từng bước đưa du\nlịch sinh thái và du lịch cộng đồng trở thành nhóm sản phẩm quan trọng trong hệ\nthống sản phẩm du lịch của thành phố.\n2. Yêu cầu\n- Việc triển khai Kế hoạch phải đảm bảo thiết thực, hiệu quả, có trọng tâm,\ntrọng điểm, phù hợp với điều kiện thực tế của từng địa phương; tránh dàn trải,\nhình thức.\n- Xác định rõ mục tiêu, nội dung công việc, lộ trình thực hiện trong phạm",
+          "môi trường, bảo tồn cảnh quan thiên nhiên, giữ gìn bản sắc văn hóa, bảo đảm an\nninh, trật tự, an toàn xã hội, thích ứng với biến đổi khí hậu và nâng cao sinh kế\ncho cộng đồng địa phương.\nII. MỤC TIÊU PHÁT TRIỂN\n1. Mục tiêu chung\nPhát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế theo hướng\nxanh – bền vững – dựa vào cộng đồng, từng bước hình thành các tuyến, cụm du\nlịch sinh thái, du lịch cộng đồng đặc trưng theo không gian đồng bằng – miền núi"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0009",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0024",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0020",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0006",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0008"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.5272420984709607,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999995
+        }
+      },
+      {
+        "id": "plan-188-03",
+        "question": "Phát triển du lịch sinh thái và du lịch cộng đồng theo Kế hoạch 188 phải gắn với các yêu cầu nào?",
+        "expected_answer": "Việc phát triển phải gắn với bảo vệ môi trường, bảo tồn cảnh quan thiên nhiên, giữ gìn bản sắc văn hóa và bảo đảm an toàn cho cộng đồng địa phương.",
+        "expected_context": "Việc phát triển du lịch sinh thái và du lịch cộng đồng phải gắn với bảo vệ môi trường, bảo tồn cảnh quan thiên nhiên, giữ gìn bản sắc văn hóa",
+        "answer": "Phát triển du lịch sinh thái và du lịch cộng đồng theo Kế hoạch 188 phải gắn với các yêu cầu sau:\n\n1. Đảm bảo thiết thực, hiệu quả, có trọng tâm, trọng điểm, phù hợp với điều kiện thực tế của từng địa phương; tránh dàn trải, hình thức [1].\n2. Xác định rõ mục tiêu, nội dung công việc, lộ trình thực hiện trong phạm vi năm 2026, gắn trách nhiệm cụ thể cho từng cơ quan, đơn vị, địa phương [2].\n3. Bảo đảm sự phối hợp chặt chẽ giữa các sở, ban, ngành, UBND các xã, phường; khuyến khích và phát huy sự tham gia chủ động của cộng đồng dân cư, doanh nghiệp, hợp tác xã và các tổ chức xã hội trong quá trình triển khai [2].",
+        "contexts": [
+          "hoạch triển khai cụ thể, huy động và lồng ghép các nguồn lực, từng bước đưa du\nlịch sinh thái và du lịch cộng đồng trở thành nhóm sản phẩm quan trọng trong hệ\nthống sản phẩm du lịch của thành phố.\n2. Yêu cầu\n- Việc triển khai Kế hoạch phải đảm bảo thiết thực, hiệu quả, có trọng tâm,\ntrọng điểm, phù hợp với điều kiện thực tế của từng địa phương; tránh dàn trải,\nhình thức.\n- Xác định rõ mục tiêu, nội dung công việc, lộ trình thực hiện trong phạm",
+          "đoạn 2026 – 2027 với những nội dung sau:\nI. MỤC ĐÍCH, YÊU CẦU\n1. Mục đích\n- Cụ thể hóa và tổ chức triển khai hiệu quả Kế hoạch số 275/KH-UBND\nngày 25/6/2025 của UBND thành phố về thực hiện Đề án “Phát triển du lịch,\ndịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045” và\nKế hoạch số 157/KH-UBND ngày 08/4/2025 về phát triển du lịch cộng đồng\ngiai đoạn 2025–2030; đồng thời định hướng phát triển du lịch sinh thái, du lịch",
+          "vi năm 2026, gắn trách nhiệm cụ thể cho từng cơ quan, đơn vị, địa phương.\n- Bảo đảm sự phối hợp chặt chẽ giữa các sở, ban, ngành, UBND các xã,\nphường; đồng thời khuyến khích và phát huy sự tham gia chủ động của cộng\nđồng dân cư, doanh nghiệp, hợp tác xã và các tổ chức xã hội trong quá trình\ntriển khai, góp phần tạo sự đồng thuận, lan tỏa và nâng cao hình ảnh điểm đến\ndu lịch tại địa phương.\n- Việc phát triển du lịch sinh thái và du lịch cộng đồng phải gắn với bảo vệ",
+          "UBND ngày 14/3/2025 của Ủy ban nhân dân thành phố Huế về phát triển du\nlịch cộng đồng trên địa bàn thành phố đến năm 2030. Nhằm cụ thể hóa mục tiêu\nphát triển du lịch sinh thái, du lịch cộng đồng gắn với khai thác tiềm năng tự\nnhiên, văn hóa bản địa và góp phần phát triển kinh tế - xã hội bền vững tại các\nxã phường trên địa bàn thành phố Huế, Ủy ban nhân dân thành phố Huế ban\nhành Kế hoạch phát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế giai",
+          "– biển, đầm phá, góp phần nâng cao chất lượng sản phẩm du lịch, tạo sinh kế bền\nvững cho người dân và đóng góp tích cực vào phát triển kinh tế – xã hội của\nthành phố.\n2. Mục tiêu cụ thể\n- Hình thành 04 cụm du lịch sinh thái, du lịch cộng đồng theo không gian\nsinh thái đặc trưng trên địa bàn thành phố: ven sông – ven đô; đầm phá – biển;\nmiền núi – sinh thái rừng; nông nghiệp – làng quê.\n- Rà soát, lựa chọn và tổ chức triển khai du lịch sinh thái, du lịch cộng đồng"
+        ],
+        "source_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0006",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0007",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0001",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0009"
+        ],
+        "configuration": "hybrid-rrf",
+        "metrics": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.4585342429538464,
+          "context_recall": 1.0,
+          "llm_context_precision_with_reference": 0.99999999998
+        }
+      }
+    ]
+  },
+  "delta_b_minus_a": {
+    "faithfulness": -0.0417,
+    "answer_relevancy": -0.042,
+    "context_recall": 0.0,
+    "llm_context_precision_with_reference": -0.0044
+  }
+}

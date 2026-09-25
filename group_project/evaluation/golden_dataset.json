@@ -1,0 +1,130 @@
+[
+  {
+    "id": "heritage-01",
+    "category": "keyword",
+    "source_document": "news/article_01",
+    "question": "Quần thể Di tích Cố đô Huế được UNESCO công nhận là Di sản văn hóa thế giới vào ngày nào và theo những tiêu chí nào?",
+    "expected_answer": "Quần thể Di tích Cố đô Huế được UNESCO công nhận ngày 11 tháng 12 năm 1993 theo tiêu chí (iii) và (iv).",
+    "expected_context": "ngày 11 tháng 12 năm 1993 đã công nhận Khu Di tích cố đô Huế là Di sản văn hóa thế giới với tiêu chí (iii)"
+  },
+  {
+    "id": "heritage-02",
+    "category": "semantic",
+    "source_document": "news/article_01",
+    "question": "Ba vòng thành lồng vào nhau ở Huế gồm những gì?",
+    "expected_answer": "Ba vòng thành là Kinh thành Huế, Hoàng thành Huế và Tử cấm thành.",
+    "expected_context": "Đó là Kinh thành Huế, Hoàng thành Huế, Tử cấm thành, ba vòng thành lồng vào nhau"
+  },
+  {
+    "id": "heritage-03",
+    "category": "keyword",
+    "source_document": "news/article_02",
+    "question": "Ngọ Môn được xây dựng vào năm nào và có đặc điểm nào ở phía trên?",
+    "expected_answer": "Ngọ Môn được xây dựng vào năm Minh Mạng thứ 14 (1833); phía trên có lầu Ngũ Phụng.",
+    "expected_context": "Ngọ môn: là cổng chính phía Nam của Hoàng thành, được xây dựng vào năm Minh Mạng thứ 14 (1833), phía trên có lầu Ngũ Phụng"
+  },
+  {
+    "id": "heritage-04",
+    "category": "confusable_sources",
+    "source_document": "news/article_02",
+    "question": "Hổ Quyền ở Huế được xây dựng năm nào và là loại công trình gì?",
+    "expected_answer": "Hổ Quyền được xây dựng năm 1830 và là một đấu trường có mặt bằng hình vành khăn.",
+    "expected_context": "Hổ Quyền: ở địa phận xã Thủy Biều, xây dựng năm 1830. Đây là một đấu trường có mặt bằng hình vành khăn"
+  },
+  {
+    "id": "nha-nhac-01",
+    "category": "semantic",
+    "source_document": "news/article_03",
+    "question": "Nhã nhạc thường được trình diễn trong những dịp nào của cung đình?",
+    "expected_answer": "Nhã nhạc được trình diễn trong các cuộc tế lễ, lễ kỷ niệm, ngày lễ tôn giáo và những sự kiện như đăng quang, lễ tang hoặc đón tiếp chính thức.",
+    "expected_context": "được trình diễn trong cung đình Việt Nam vào các cuộc tế, lễ gắn với các lễ kỷ niệm và những ngày lễ tôn giáo cũng như các sự kiện đặc biệt"
+  },
+  {
+    "id": "nha-nhac-02",
+    "category": "keyword",
+    "source_document": "news/article_03",
+    "question": "Nhã nhạc được UNESCO công nhận vào ngày nào?",
+    "expected_answer": "Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm 2003.",
+    "expected_context": "Nhã nhạc được UNESCO công nhận là Kiệt tác Di sản truyền khẩu và phi vật thể của Nhân loại vào ngày 07 tháng 11 năm 2003"
+  },
+  {
+    "id": "nha-nhac-03",
+    "category": "confusable_sources",
+    "source_document": "news/article_03",
+    "question": "Dàn Đại nhạc dùng trong những lễ nào và có đặc điểm âm lượng ra sao?",
+    "expected_answer": "Dàn Đại nhạc dùng trong các lễ như tế Nam Giao, tế miếu và Đại triều; đây là dàn nhạc có âm lượng lớn.",
+    "expected_context": "Dàn Đại nhạc là dàn nhạc quan trọng trong hệ thống nhạc lễ cung đình Huế, được diễn tấu dưới các trình thức quan trọng"
+  },
+  {
+    "id": "ca-hue-01",
+    "category": "keyword",
+    "source_document": "news/article_04",
+    "question": "Ca Huế được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo quyết định nào?",
+    "expected_answer": "Ca Huế được đưa vào Danh mục theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015.",
+    "expected_context": "Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL"
+  },
+  {
+    "id": "ca-hue-02",
+    "category": "confusable_sources",
+    "source_document": "news/article_04",
+    "question": "Ca Huế có bao nhiêu bài bản hiện còn và các điệu thức chính là gì?",
+    "expected_answer": "Ca Huế hiện còn 31 bài bản; ba điệu thức chính là điệu Bắc, điệu Nam và Nam xuân.",
+    "expected_context": "Ca Huế được xây dựng trên 3 điệu thức chính là điệu Bắc, điệu Nam và Nam xuân"
+  },
+  {
+    "id": "poetry-01",
+    "category": "semantic",
+    "source_document": "news/article_05",
+    "question": "Kiểu trang trí nào kết hợp một ô thơ hoặc đại tự với một bức họa trong kiến trúc cung đình Huế?",
+    "expected_answer": "Đó là kiểu thức “nhất thi nhất họa” hoặc “nhất tự nhất họa”.",
+    "expected_context": "một ô thơ hoặc 1 đại tự đi liền với 1 bức họa tạo nên kiểu thức \"nhất thi nhất họa\" hoặc \"nhất tự nhất họa\""
+  },
+  {
+    "id": "plan-275-01",
+    "category": "keyword",
+    "source_document": "legal/ke_hoach_275_2025_phat_trien_du_lich_hue",
+    "question": "Kế hoạch 275/KH-UBND của Huế được ban hành ngày nào và triển khai đề án cho giai đoạn nào?",
+    "expected_answer": "Kế hoạch 275/KH-UBND ban hành ngày 25 tháng 6 năm 2025, triển khai đề án phát triển du lịch và dịch vụ du lịch thành phố Huế giai đoạn 2025–2030, tầm nhìn đến năm 2045.",
+    "expected_context": "Số: 275 /KH-UBND Huế, ngày 25 tháng 6 năm 2025"
+  },
+  {
+    "id": "plan-275-02",
+    "category": "semantic",
+    "source_document": "legal/ke_hoach_275_2025_phat_trien_du_lich_hue",
+    "question": "Đến năm 2030, Kế hoạch 275 định hướng vị thế du lịch Huế như thế nào?",
+    "expected_answer": "Đến năm 2030, du lịch Huế được định hướng là ngành kinh tế mũi nhọn và là điểm đến hấp dẫn, an toàn, thân thiện thuộc nhóm dẫn đầu cả nước.",
+    "expected_context": "Đến năm 2030, du lịch Huế thật sự là ngành kinh tế mũi nhọn, là điểm đến hấp dẫn, an toàn, thân thiện thuộc nhóm dẫn đầu cả nước"
+  },
+  {
+    "id": "plan-275-03",
+    "category": "confusable_sources",
+    "source_document": "legal/ke_hoach_275_2025_phat_trien_du_lich_hue",
+    "question": "Kế hoạch 275 khuyến khích người dân địa phương tham gia du lịch bằng những hoạt động nào?",
+    "expected_answer": "Kế hoạch khuyến khích người dân tham gia qua homestay, làm hướng dẫn viên địa phương và bán sản phẩm thủ công.",
+    "expected_context": "Khuyến khích người dân tham gia vào các hoạt động du lịch, như homestay, hướng dẫn viên địa phương và bán sản phẩm thủ công"
+  },
+  {
+    "id": "plan-188-01",
+    "category": "keyword",
+    "source_document": "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue",
+    "question": "Kế hoạch 188/KH-UBND tập trung phát triển loại hình du lịch nào và trong giai đoạn nào?",
+    "expected_answer": "Kế hoạch 188 tập trung phát triển du lịch sinh thái và du lịch cộng đồng thành phố Huế giai đoạn 2026–2027.",
+    "expected_context": "Phát triển du lịch sinh thái, du lịch cộng đồng thành phố Huế giai đoạn 2026 – 2027"
+  },
+  {
+    "id": "plan-188-02",
+    "category": "confusable_sources",
+    "source_document": "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue",
+    "question": "Kế hoạch 188 đặt mục tiêu hình thành bao nhiêu cụm du lịch sinh thái, du lịch cộng đồng và theo các không gian nào?",
+    "expected_answer": "Kế hoạch đặt mục tiêu hình thành 4 cụm theo các không gian ven sông–ven đô, đầm phá–biển, miền núi–sinh thái rừng và nông nghiệp–làng quê.",
+    "expected_context": "Hình thành 04 cụm du lịch sinh thái, du lịch cộng đồng theo không gian sinh thái đặc trưng"
+  },
+  {
+    "id": "plan-188-03",
+    "category": "semantic",
+    "source_document": "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue",
+    "question": "Phát triển du lịch sinh thái và du lịch cộng đồng theo Kế hoạch 188 phải gắn với các yêu cầu nào?",
+    "expected_answer": "Việc phát triển phải gắn với bảo vệ môi trường, bảo tồn cảnh quan thiên nhiên, giữ gìn bản sắc văn hóa và bảo đảm an toàn cho cộng đồng địa phương.",
+    "expected_context": "Việc phát triển du lịch sinh thái và du lịch cộng đồng phải gắn với bảo vệ môi trường, bảo tồn cảnh quan thiên nhiên, giữ gìn bản sắc văn hóa"
+  }
+]

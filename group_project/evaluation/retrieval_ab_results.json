@@ -1,0 +1,513 @@
+{
+  "dataset": "group_project/evaluation/golden_dataset.json",
+  "case_count": 16,
+  "retrieval_only": true,
+  "note": "Faithfulness and answer relevance are not measured until Task 10 is available.",
+  "config_a": {
+    "name": "dense-only",
+    "top_k": 5,
+    "metrics": {
+      "context_recall_proxy": 1.0,
+      "context_precision_proxy": 0.725,
+      "mean_latency_ms": 61.3
+    },
+    "per_case": [
+      {
+        "id": "heritage-01",
+        "question": "Quần thể Di tích Cố đô Huế được UNESCO công nhận là Di sản văn hóa thế giới vào ngày nào và theo những tiêu chí nào?",
+        "expected_document": "news/article_01",
+        "returned_ids": [
+          "news/article_01::chunk-0000",
+          "news/article_02::chunk-0012",
+          "news/article_01::chunk-0007",
+          "news/article_05::chunk-0000",
+          "legal/van_ban_hop_nhat_51_2026_luat_di_san_van_hoa::chunk-0117"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.4,
+        "latency_ms": 203.88
+      },
+      {
+        "id": "heritage-02",
+        "question": "Ba vòng thành lồng vào nhau ở Huế gồm những gì?",
+        "expected_document": "news/article_01",
+        "returned_ids": [
+          "news/article_01::chunk-0002",
+          "news/article_02::chunk-0004",
+          "news/article_01::chunk-0004",
+          "news/article_02::chunk-0003",
+          "news/article_01::chunk-0003"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.6,
+        "latency_ms": 214.57
+      },
+      {
+        "id": "heritage-03",
+        "question": "Ngọ Môn được xây dựng vào năm nào và có đặc điểm nào ở phía trên?",
+        "expected_document": "news/article_02",
+        "returned_ids": [
+          "news/article_01::chunk-0003",
+          "news/article_02::chunk-0006",
+          "news/article_05::chunk-0004",
+          "news/article_02::chunk-0009",
+          "news/article_02::chunk-0008"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.6,
+        "latency_ms": 45.26
+      },
+      {
+        "id": "heritage-04",
+        "question": "Hổ Quyền ở Huế được xây dựng năm nào và là loại công trình gì?",
+        "expected_document": "news/article_02",
+        "returned_ids": [
+          "news/article_02::chunk-0010",
+          "news/article_02::chunk-0004",
+          "news/article_02::chunk-0009",
+          "news/article_01::chunk-0004",
+          "news/article_01::chunk-0002"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.6,
+        "latency_ms": 45.83
+      },
+      {
+        "id": "nha-nhac-01",
+        "question": "Nhã nhạc thường được trình diễn trong những dịp nào của cung đình?",
+        "expected_document": "news/article_03",
+        "returned_ids": [
+          "news/article_03::chunk-0000",
+          "news/article_03::chunk-0009",
+          "news/article_03::chunk-0003",
+          "news/article_03::chunk-0016",
+          "news/article_03::chunk-0006"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 44.66
+      },
+      {
+        "id": "nha-nhac-02",
+        "question": "Nhã nhạc được UNESCO công nhận vào ngày nào?",
+        "expected_document": "news/article_03",
+        "returned_ids": [
+          "news/article_03::chunk-0010",
+          "news/article_01::chunk-0007",
+          "news/article_03::chunk-0001",
+          "news/article_04::chunk-0019",
+          "news/article_03::chunk-0000"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.6,
+        "latency_ms": 41.47
+      },
+      {
+        "id": "nha-nhac-03",
+        "question": "Dàn Đại nhạc dùng trong những lễ nào và có đặc điểm âm lượng ra sao?",
+        "expected_document": "news/article_03",
+        "returned_ids": [
+          "news/article_03::chunk-0006",
+          "news/article_03::chunk-0007",
+          "news/article_03::chunk-0003",
+          "news/article_03::chunk-0005",
+          "news/article_04::chunk-0005"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.8,
+        "latency_ms": 35.46
+      },
+      {
+        "id": "ca-hue-01",
+        "question": "Ca Huế được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo quyết định nào?",
+        "expected_document": "news/article_04",
+        "returned_ids": [
+          "news/article_04::chunk-0019",
+          "news/article_01::chunk-0007",
+          "news/article_02::chunk-0012",
+          "news/article_04::chunk-0001",
+          "news/article_04::chunk-0014"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.6,
+        "latency_ms": 39.32
+      },
+      {
+        "id": "ca-hue-02",
+        "question": "Ca Huế có bao nhiêu bài bản hiện còn và các điệu thức chính là gì?",
+        "expected_document": "news/article_04",
+        "returned_ids": [
+          "news/article_04::chunk-0013",
+          "news/article_04::chunk-0010",
+          "news/article_04::chunk-0009",
+          "news/article_04::chunk-0012",
+          "news/article_04::chunk-0018"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 39.38
+      },
+      {
+        "id": "poetry-01",
+        "question": "Kiểu trang trí nào kết hợp một ô thơ hoặc đại tự với một bức họa trong kiến trúc cung đình Huế?",
+        "expected_document": "news/article_05",
+        "returned_ids": [
+          "news/article_05::chunk-0004",
+          "news/article_05::chunk-0007",
+          "news/article_05::chunk-0008",
+          "news/article_05::chunk-0005",
+          "news/article_05::chunk-0003"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 46.55
+      },
+      {
+        "id": "plan-275-01",
+        "question": "Kế hoạch 275/KH-UBND của Huế được ban hành ngày nào và triển khai đề án cho giai đoạn nào?",
+        "expected_document": "legal/ke_hoach_275_2025_phat_trien_du_lich_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0001",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0066"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.4,
+        "latency_ms": 34.46
+      },
+      {
+        "id": "plan-275-02",
+        "question": "Đến năm 2030, Kế hoạch 275 định hướng vị thế du lịch Huế như thế nào?",
+        "expected_document": "legal/ke_hoach_275_2025_phat_trien_du_lich_hue",
+        "returned_ids": [
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0001",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0004",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0177"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.8,
+        "latency_ms": 33.89
+      },
+      {
+        "id": "plan-275-03",
+        "question": "Kế hoạch 275 khuyến khích người dân địa phương tham gia du lịch bằng những hoạt động nào?",
+        "expected_document": "legal/ke_hoach_275_2025_phat_trien_du_lich_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0021",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0012",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0019",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0020",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.2,
+        "latency_ms": 35.15
+      },
+      {
+        "id": "plan-188-01",
+        "question": "Kế hoạch 188/KH-UBND tập trung phát triển loại hình du lịch nào và trong giai đoạn nào?",
+        "expected_document": "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0025",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0020",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0024"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 40.99
+      },
+      {
+        "id": "plan-188-02",
+        "question": "Kế hoạch 188 đặt mục tiêu hình thành bao nhiêu cụm du lịch sinh thái, du lịch cộng đồng và theo các không gian nào?",
+        "expected_document": "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0009",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0024",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0019",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0130",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0121"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 38.44
+      },
+      {
+        "id": "plan-188-03",
+        "question": "Phát triển du lịch sinh thái và du lịch cộng đồng theo Kế hoạch 188 phải gắn với các yêu cầu nào?",
+        "expected_document": "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0006",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0007",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0009",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0020",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0019"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 41.57
+      }
+    ]
+  },
+  "config_b": {
+    "name": "hybrid-rrf",
+    "top_k": 5,
+    "metrics": {
+      "context_recall_proxy": 1.0,
+      "context_precision_proxy": 0.725,
+      "mean_latency_ms": 118.77
+    },
+    "per_case": [
+      {
+        "id": "heritage-01",
+        "question": "Quần thể Di tích Cố đô Huế được UNESCO công nhận là Di sản văn hóa thế giới vào ngày nào và theo những tiêu chí nào?",
+        "expected_document": "news/article_01",
+        "returned_ids": [
+          "news/article_01::chunk-0000",
+          "news/article_02::chunk-0012",
+          "legal/van_ban_hop_nhat_51_2026_luat_di_san_van_hoa::chunk-0117",
+          "news/article_01::chunk-0007",
+          "news/article_05::chunk-0000"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.4,
+        "latency_ms": 150.41
+      },
+      {
+        "id": "heritage-02",
+        "question": "Ba vòng thành lồng vào nhau ở Huế gồm những gì?",
+        "expected_document": "news/article_01",
+        "returned_ids": [
+          "news/article_01::chunk-0002",
+          "news/article_02::chunk-0004",
+          "news/article_01::chunk-0003",
+          "news/article_01::chunk-0004",
+          "news/article_01::chunk-0001"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.8,
+        "latency_ms": 138.96
+      },
+      {
+        "id": "heritage-03",
+        "question": "Ngọ Môn được xây dựng vào năm nào và có đặc điểm nào ở phía trên?",
+        "expected_document": "news/article_02",
+        "returned_ids": [
+          "news/article_02::chunk-0006",
+          "news/article_01::chunk-0003",
+          "news/article_02::chunk-0009",
+          "news/article_02::chunk-0010",
+          "news/article_02::chunk-0008"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.8,
+        "latency_ms": 106.04
+      },
+      {
+        "id": "heritage-04",
+        "question": "Hổ Quyền ở Huế được xây dựng năm nào và là loại công trình gì?",
+        "expected_document": "news/article_02",
+        "returned_ids": [
+          "news/article_02::chunk-0010",
+          "news/article_02::chunk-0009",
+          "news/article_05::chunk-0001",
+          "news/article_02::chunk-0004",
+          "news/article_05::chunk-0009"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.6,
+        "latency_ms": 118.09
+      },
+      {
+        "id": "nha-nhac-01",
+        "question": "Nhã nhạc thường được trình diễn trong những dịp nào của cung đình?",
+        "expected_document": "news/article_03",
+        "returned_ids": [
+          "news/article_03::chunk-0000",
+          "news/article_03::chunk-0007",
+          "news/article_03::chunk-0003",
+          "news/article_03::chunk-0016",
+          "news/article_03::chunk-0009"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 92.97
+      },
+      {
+        "id": "nha-nhac-02",
+        "question": "Nhã nhạc được UNESCO công nhận vào ngày nào?",
+        "expected_document": "news/article_03",
+        "returned_ids": [
+          "news/article_03::chunk-0010",
+          "news/article_01::chunk-0007",
+          "news/article_03::chunk-0001",
+          "news/article_03::chunk-0000",
+          "news/article_04::chunk-0019"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.6,
+        "latency_ms": 96.02
+      },
+      {
+        "id": "nha-nhac-03",
+        "question": "Dàn Đại nhạc dùng trong những lễ nào và có đặc điểm âm lượng ra sao?",
+        "expected_document": "news/article_03",
+        "returned_ids": [
+          "news/article_03::chunk-0006",
+          "news/article_03::chunk-0007",
+          "news/article_03::chunk-0003",
+          "news/article_03::chunk-0000",
+          "news/article_03::chunk-0005"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 115.6
+      },
+      {
+        "id": "ca-hue-01",
+        "question": "Ca Huế được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo quyết định nào?",
+        "expected_document": "news/article_04",
+        "returned_ids": [
+          "news/article_04::chunk-0019",
+          "legal/van_ban_hop_nhat_51_2026_luat_di_san_van_hoa::chunk-0078",
+          "legal/van_ban_hop_nhat_51_2026_luat_di_san_van_hoa::chunk-0072",
+          "news/article_01::chunk-0007",
+          "news/article_02::chunk-0012"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.2,
+        "latency_ms": 114.31
+      },
+      {
+        "id": "ca-hue-02",
+        "question": "Ca Huế có bao nhiêu bài bản hiện còn và các điệu thức chính là gì?",
+        "expected_document": "news/article_04",
+        "returned_ids": [
+          "news/article_04::chunk-0013",
+          "news/article_04::chunk-0010",
+          "news/article_04::chunk-0012",
+          "news/article_04::chunk-0009",
+          "news/article_04::chunk-0014"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 110.66
+      },
+      {
+        "id": "poetry-01",
+        "question": "Kiểu trang trí nào kết hợp một ô thơ hoặc đại tự với một bức họa trong kiến trúc cung đình Huế?",
+        "expected_document": "news/article_05",
+        "returned_ids": [
+          "news/article_05::chunk-0004",
+          "news/article_05::chunk-0007",
+          "news/article_05::chunk-0008",
+          "news/article_05::chunk-0015",
+          "news/article_05::chunk-0009"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 96.27
+      },
+      {
+        "id": "plan-275-01",
+        "question": "Kế hoạch 275/KH-UBND của Huế được ban hành ngày nào và triển khai đề án cho giai đoạn nào?",
+        "expected_document": "legal/ke_hoach_275_2025_phat_trien_du_lich_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0000",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0001",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0068"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.4,
+        "latency_ms": 124.53
+      },
+      {
+        "id": "plan-275-02",
+        "question": "Đến năm 2030, Kế hoạch 275 định hướng vị thế du lịch Huế như thế nào?",
+        "expected_document": "legal/ke_hoach_275_2025_phat_trien_du_lich_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0001",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0001"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.4,
+        "latency_ms": 110.77
+      },
+      {
+        "id": "plan-275-03",
+        "question": "Kế hoạch 275 khuyến khích người dân địa phương tham gia du lịch bằng những hoạt động nào?",
+        "expected_document": "legal/ke_hoach_275_2025_phat_trien_du_lich_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0021",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0007",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0035",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0012",
+          "legal/ke_hoach_275_2025_phat_trien_du_lich_hue::chunk-0033"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 0.4,
+        "latency_ms": 112.88
+      },
+      {
+        "id": "plan-188-01",
+        "question": "Kế hoạch 188/KH-UBND tập trung phát triển loại hình du lịch nào và trong giai đoạn nào?",
+        "expected_document": "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0000",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0068",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0019",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0025"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 122.08
+      },
+      {
+        "id": "plan-188-02",
+        "question": "Kế hoạch 188 đặt mục tiêu hình thành bao nhiêu cụm du lịch sinh thái, du lịch cộng đồng và theo các không gian nào?",
+        "expected_document": "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0009",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0024",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0020",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0006",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0008"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 168.45
+      },
+      {
+        "id": "plan-188-03",
+        "question": "Phát triển du lịch sinh thái và du lịch cộng đồng theo Kế hoạch 188 phải gắn với các yêu cầu nào?",
+        "expected_document": "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue",
+        "returned_ids": [
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0006",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0002",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0007",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0001",
+          "legal/ke_hoach_188_2026_du_lich_sinh_thai_cong_dong_hue::chunk-0009"
+        ],
+        "context_recall_proxy": 1.0,
+        "context_precision_proxy": 1.0,
+        "latency_ms": 122.35
+      }
+    ]
+  },
+  "delta_b_minus_a": {
+    "context_recall_proxy": 0.0,
+    "context_precision_proxy": 0.0,
+    "mean_latency_ms": 57.47
+  }
+}
