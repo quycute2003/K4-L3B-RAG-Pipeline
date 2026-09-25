@@ -1,0 +1,42 @@
+---
+title: "Ca Huế"
+source: "https://dsvh.gov.vn/ca-hue-1180"
+date_crawled: "2026-09-20T09:05:50.230166+00:00"
+doc_type: "news"
+---
+
+# Ca Huế
+
+Ca Huế khởi nguồn từ hát cửa quyền trong cung vua phủ chúa, với hình thức diễn xướng mang tính bác học dành cho giới thượng lưu say mê nghệ thuật. Theo thời gian, lối hát thính phòng này dần được dân gian hóa để có điều kiện đến được với nhiều tầng lớp công chúng.
+
+Theo các nghiên cứu, thời điểm hình thành và phát triển của thể loại Ca Huế có thể từ thế kỷ XVII đến giữa thế kỷ XVIII. Sang thế kỷ XIX, vào thời Tự Đức, là thời kỳ hưng thịnh nhất, Ca Huế được định hình với một số bài bản rút ra từ tế nhạc cung đình, như: “Long ngâm”, “Ngũ đối thượng”, “Ngũ đối hạ”; các bài bản trong hệ thống “Mười bài ngự” (thập thủ liên hoàn, liên bộ thập chương, mười bản tàu) như: “Phẩm tuyết”, “Nguyên tiêu”, “Hồ quảng”, “Liên hoàn”, “Bình bán”, “Tây mai”, “Kim tiền”, “Xuân phong”, “Long hổ”, “Tẩu mã”… Ca Huế thực sự phát triển cùng với sự tham gia sáng tác, biểu diễn của nhiều văn nhân, nho sĩ, quan lại, các ca nương, nhạc công tài năng dưới triều Nguyễn.
+
+Môi trường diễn xướng của Ca Huế thường ở trong một không gian hẹp, số lượng người trình diễn và người nghe hạn chế, do tính chất của âm nhạc mang tính tâm tình, tự sự. Ca Huế có đặc điểm không trình diễn trước đám đông hoặc hát dưới ánh mặt trời. Số lượng người trình diễn cho một buổi Ca Huế có khoảng từ 8 đến 10 người, trong đó, số lượng nhạc công có từ 5 đến 6 người. Ca sĩ, nhạc công sẽ hoà đàn và hát các bài bản trong các nhạc mục của Ca Huế. Biên chế của dàn nhạc phải sử dụng đạt chuẩn 4 hoặc 5 nhạc cụ trong dàn ngũ tuyệt cổ điển, bao gồm: đàn nguyệt, đàn tỳ bà, đàn nhị, đàn tranh, đàn tam và tuỳ theo từng trường hợp có thể không có cây đàn tam và bổ sung thêm cây đàn bầu với đầy đủ biên chế của dàn ngũ tuyệt, hoặc có thể dùng dàn “*tứ tuyệt*” bao gồm các nhạc cụ: nguyệt, nhị, tỳ và đàn tranh hoặc đầy đủ hơn là dàn lục ngự: tam, tỳ, nhị, nguyệt, tranh, bầu.
+
+Trình diễn Ca Huế là một cuộc tao ngộ giữa các tao nhân mặc khách có hiểu biết về văn hóa và âm nhạc. Buổi biểu diễn không bị lệ thuộc vào quy trình cứng nhắc giữa người thưởng thức và người trình diễn mà có mối giao tình, hiểu biết lẫn nhau giữa chủ và khách, thể hiện bằng 2 phong cách:
+
+- Biểu diễn truyền thống: người biểu diễn và người thưởng thức có mối quan hệ thâm tình, có quen biết nhau hoặc có nghe về tài nghệ biểu diễn của nhau, họ cùng ở trong một địa bàn hoặc đến từ các vùng miền khác nhau am hiểu về Ca Huế. Buổi biểu diễn được xen kẽ với các nhận xét, đánh giá, bình phẩm giống như một cuộc tọa đàm nhỏ về nghệ thuật Ca Huế.
+
+- Biểu diễn cho du khách: có người giới thiệu chương trình, quá trình hình thành, phát triển cũng như giá trị của Ca Huế với các tiết mục biểu diễn minh họa của nghệ nhân. Hình thức này chỉ mới xuất hiện trong khoảng nữa cuối thế kỷ XX là loại hình biểu diễn Ca Huế trong các hội làng, cưới hỏi và sau này phổ biến phục vụ du lịch trên sông Hương.
+
+Ca Huế được các nghệ nhân tài danh sáng tạo, bổ sung tạo thành hệ thống bài bản phong phú, với giai điệu hoàn chỉnh mang tính nghệ thuật cao, lời ca giàu chất văn học, kỹ thuật ca hát tinh tế, điêu luyện, nhạc đệm hoàn hảo.
+
+**Về hệ thống bài bản của Ca Huế**
+
+Ca Huế được xây dựng trên 3 điệu thức chính là điệu Bắc, điệu Nam và Nam xuân. Các bài bản mang điệu Bắc có tính chất vui tươi, trong sáng, trang trọng và thuần khiết với 10 bài liên hoàn và 3 bài lẻ. Điệu Nam có 5 bài mang tính chất buồn thương, bi ai, vương vấn; cấu trúc giai điệu có nhiều lớp, luyến láy trong cách ca và có yêu cầu cao về phát âm, nhả chữ, luyến láy thay đổi sắc thái trong từng câu hát. Điệu Nam xuân hay còn được coi là “lưỡng tính” gồm 5 bài bản, có tính bâng khuâng, mơ hồ; sắc thái buồn của các bài bản này nỗi rõ hơn, vì vậy chất Nam cũng nhiều hơn.
+
+Các bài bản thuộc hơi dựng là nét đặc biệt độc đáo của Ca Huế với cách ca biến đổi sắc thái, từ hơi ai sang hơi oán dựa trên bài bản một điệu Bắc hay điệu Nam. Hơi dựng không có một hệ thống bài bản riêng như điệu Bắc hoặc điệu Nam, mà nó chỉ là một phong cách đặc biệt của Ca Huế và chỉ có 2 bài ca theo hơi dựng. Đó là bài Cổ bản thuộc điệu Bắc và Nam bình thuộc điệu Nam.
+
+Ca Huế hiện còn 31 bài bản, trong đó, 13 bản thuộc điệu Bắc, 5 bài bản theo điệu Nam, 5 bài bản theo điệu Nam Xuân, 2 bài của điệu Bắc (Cổ bản) và điệu Nam (Nam bình) được hát theo hơi dựng, 6 bài bản vẫn còn nhạc phổ bằng Hán tự nhưng chưa được phục dựng.
+
+**Về nghệ thuật ca và âm nhạc của Ca Huế**
+
+Ca Huế là loại âm nhạc bác học, chuyên nghiệp có những yêu cầu cao về kỹ thuật ca hát. Người hát Ca Huế và nhạc công Ca Huế phải là những người có năng khiếu về âm nhạc và phải có một quy trình đào tạo lâu dài. Trong Ca Huế, có nhiều loại bài bản, điệu thức, hơi nhạc, nên cũng có nhiều cách hát khác nhau, thể hiện các sắc thái tình cảm của từng bài bản. Khi ca, người ca phải nắn nót trong phát âm, nhả chữ đúng với tiếng Huế chuẩn, nắm rõ các loại nhịp độ, tốc độ của từng bài bản âm nhạc, cách luyến láy đặc trưng, cách ca dồn, ca sắp, ca đối hơi, ca nhịp ngoài, ca già dặn, chân phương, cách lấy hơi, diễn tả sắc thái mạnh nhẹ trong từng câu hát của hệ bài bản Ca Huế.
+
+Ca Huế cũng có yêu cầu cao về nhạc đệm, với 5 nhạc cụ trong dàn “ngũ tuyệt”, trong đó không có cây đàn tam mà thay vào bằng cây đàn bầu. Ngoài ra còn có song loan, một nhạc cụ gõ bằng gỗ do ca nương gõ nhịp hoặc do một nhạc công kẹp dưới bàn chân để điểm nhịp cho các bài ca. Nhạc công phải thuộc mọi bài bản của ca Huế từ điệu Bắc, điệu Nam, điệu Nam xuân, hơi dựng và sự thay đổi các hơi nhạc phong phú trong các bài bản Ca Huế. Tuỳ từng loại nhạc cụ mà nhạc công chơi các kỹ thuật như nhấn, rung khác nhau: nhấn nửa bậc, một bậc, bậc rưỡi, 2 đến 3 bậc; đến nhấn vuốt, nhấn mổ, nhấn nhảy, nhấn rung, nhấn lật ngón; các loại kỹ thuật như chầy, hưởng, vã, mổ, bấm, bịt, day, chớp, búng, phi, rãi… để sáng tạo trong khi đệm nhạc.
+
+Tính liên tục, chuyển tiếp, biến âm, biến điệu, tự tình, cô đọng súc tích từ nội dung tới hình thức của ca Huế giúp nhạc công và ca nương có thể bộc lộ các tuyệt kỹ của mình.
+
+Ca Huế là một trong những tiểu hệ cấu thành trong tổng thể của văn hoá Huế, với giai điệu, nhịp điệu trầm lặng, sâu lắng và trữ tình. Nguồn gốc cung đình và tính bác học của Ca Huế được bộc lộ rõ ở hệ bài bản, hệ nhạc khí đệm, ở sự phát triển của phần khí nhạc cũng như dấu vết âm luật.
+
+Là thể loại âm nhạc mang đầy đủ các điều kiện, tiêu chí của dòng âm nhạc cộng hưởng giữa dân gian, chuyên nghiệp và bác học của thể loại thính phòng, một thể loại âm nhạc đỉnh cao trong toàn bộ các di sản âm nhạc truyền thống Việt Nam, Ca Huế đã được Bộ trưởng Bộ Văn hóa, Thể thao và Du lịch đưa vào Danh mục di sản văn hóa phi vật thể quốc gia theo Quyết định số 1877/QĐ-BVHTTDL ngày 08 tháng 6 năm 2015./.

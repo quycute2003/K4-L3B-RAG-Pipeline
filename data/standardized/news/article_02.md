@@ -1,0 +1,58 @@
+---
+title: "Di tích lịch sử và kiến trúc nghệ thuật Quần thể kiến trúc Cố đô Huế"
+source: "https://dsvh.gov.vn/di-tich-lich-su-va-kien-truc-nghe-thuat-quan-the-kien-truc-co-do-hue-2944"
+date_crawled: "2026-09-20T09:05:49.747307+00:00"
+doc_type: "news"
+---
+
+# Di tích lịch sử và kiến trúc nghệ thuật Quần thể kiến trúc Cố đô Huế
+
+**Quần thể kiến trúc Cố đô Huế bao gồm hệ thống các di tích liên quan đến triều Nguyễn, phân bố ở thành phố Huế và các huyện Hương Trà, Hương Thủy, Phú Vang, Phú Lộc, thuộc tỉnh Thừa Thiên Huế.**
+
+![](/ckfinder/userfiles/images/Thong%20tin%20ds/DTQGDB_Co%20do%20Hue.jpg)
+
+Kiến trúc Huế là sự kết hợp độc đáo giữa những nguyên tắc của kiến trúc truyền thống Việt, tư tưởng triết lý phương Đông, cùng những đặc điểm mang ảnh hưởng của kiến trúc quân sự phương Tây, hài hòa với các yếu tố tự nhiên: núi Ngự Bình, sông Hương, cồn Giã Viên, cồn Bộc Thanh, cồn Hến…
+
+Trải qua thời gian và những biến thiên của lịch sử, Huế vẫn bảo tồn được diện mạo của một kinh đô xưa, với hàng trăm công trình nghệ thuật tuyệt mỹ, vừa có giá trị đặc biệt về lịch sử và văn hóa, vừa phong phú, đa dạng, mang đậm bản sắc Huế…
+
+Về di sản kiến trúc của Cố đô Huế, có thể kể đến những di tích tiêu biểu sau: Kinh thành, Hoàng thành và Tử Cấm thành, hệ thống lăng tẩm của các vua Nguyễn, cung An Định, Trai cung, bến thuyền Cung đình, Trấn Bình đài, Trấn Hải thành, điện Hòn Chén, nhà bà Từ Cung, Văn miếu, Võ miếu, Hải Vân quan,…
+
+*Kinh thành Huế:*được khởi công xây dựng từ năm 1805, hoàn thành năm 1832, nằm bên bờ Bắc của sông Hương, quay mặt về hướng Nam, gồm ba toà thành lồng vào nhau, được bố trí đăng đối trên một trục dọc, xuyên suốt từ mặt Nam ra mặt Bắc, xung quanh có 10 cửa chính và hệ thống vọng canh, hào nước…
+
+*Đại nội (Hoàng thành, Hoàng cung):* nằm giữa trục chính của Kinh thành Huế, bao gồm các khu vực chính như sau:
+
+- Khu vực phòng vệ gồm: hệ thống hồ Kim thủy (hào), tường bao bọc và 10 cây cầu.
+
+- Khu vực cử hành đại lễ: được tính từ Ngọ môn đến điện Thái Hòa, là nơi cử hành các nghi lễ Nguyên đán, Vạn thọ, Hưng quốc Khánh niệm, Ban sóc, Duyệt binh, Truyền lô, Đăng quang, Tứ tuần, Ngũ tuần Đại khánh tiết của các Vua nhà Nguyễn.
+
+- Khu vực các miếu thờ của vua chúa Nguyễn gồm: Triệu miếu, Thái miếu, Hưng miếu, Thế miếu, điện Phụng tiên.
+
+- Khu vực ăn ở của Hoàng thái hậu và Thái Hoàng thái hậu gồm: cung Diên Thọ và cung Trường Sanh (Sinh).
+
+- Khu vực phủ Nội vụ gồm: nhà kho lưu giữ đồ quý, xưởng thủ công mỹ nghệ chế tạo đồ vàng, bạc, ngọc, ngà, gấm, vóc.
+
+- Khu vực vườn Cơ Hạ và điện Khâm Văn: là nơi học tập và chơi đùa của các Hoàng tử khi chưa xuất phủ.
+
+- Khu vực Tử Cấm Thành: là chốn cung cấm, dành riêng cho Vua và hoàng gia ăn ở, sinh hoạt.
+
+*Ngọ môn:* là cổng chính phía Nam của Hoàng thành, được xây dựng vào năm Minh Mạng thứ 14 (1833), phía trên có lầu Ngũ Phụng, là nơi xưa kia triều đình tổ chức nghi lễ.
+
+*Đ**iện Thái Hòa:*được xây dựng năm 1805. Điện được xây theo lối ‘‘trùng thiềm điệp ốc’’, với hệ thống vì kèo truyền thống, được sơn thếp và trang trí đồ án rồng vờn...
+
+*Lăng tẩm của các vua Nguyễn:*được xem là những thành tựu của nền kiến trúc cảnh vật hoá. Lăng vua, đôi khi lại là một cõi thiên đường, được tạo ra cho chủ nhân hưởng thú tiêu dao lúc còn sống, rồi sau đó mới trở thành cõi vĩnh hằng khi bước vào thế giới bên kia. Một số lăng tiêu biểu như:
+
+- Lăng Minh Mạng (Hiếu lăng): trên núi Cẩm Khê, xã Hương Thọ, đựợc xây dựng từ năm 1840, hoàn thành năm 1843, bao gồm các hạng mục: tẩm điện, Tam tài sơn, lăng mộ, hồ Trừng Minh và Tân Nguyệt...;
+
+- Lăng Tự Đức (Khiêm lăng): ở xã Thủy Xuân, được xây dựng từ năm 1864, hoàn thành năm 1867, bao gồm các hạng mục: La thành và các cổng, Chí Khiêm đường, điện thờ, lăng Lệ Thiên Anh Hoàng hậu, lăng Kiến Phúc, hồ Lưu Khiêm...
+
+*Đàn Nam Giao:*ở phía Nam của Kinh thành Huế, được xây dựng vào năm 1807. Đàn có mặt bằng hình chữ nhật, chiều dài 390m, chiều rộng 265m, gồm các hạng mục: Đàn tế, Trai cung, Thần trù, Thần khố...
+
+*Văn Miếu:*ở bờ Bắc của sông Hương, cách chùa Thiên Mụ khoảng 500m về phía Tây, được xây dựng năm 1808, để thờ Khổng Tử. Văn Miếu quay mặt về hướng Nam, bao gồm các hạng mục: Văn miếu, Đông vu, Tây vu và dãy nhà bia.
+
+*Hổ Quyền:*ở địa phận xã [Thủy Biều](http://vi.wikipedia.org/wiki/Th%E1%BB%A7y_Bi%E1%BB%81u "Thủy Biều"), xây dựng năm 1830. Đây là một đấu trường có mặt bằng hình vành khăn, gồm hai vòng tường gạch (ở trong và ngoài), xung quanh trổ chuồng cọp và cửa vòm cho voi ra vào, phía trên là khán đài.
+
+Bên cạnh kho tàng di sản văn hóa kiến trúc đồ sộ có giá trị và mang tầm vóc quốc tế, trong khu vực Cố đô Huế còn lưu giữ được nhiều hiện vật có giá trị, tiêu biểu như đồ gốm, sứ, tác phẩm nghệ thuật…Ngoài ra, Cố đô Huế còn là một trung tâm văn hóa chứa đựng nhiều di sản văn hóa phi vật thể đặc sắc, bao gồm sinh hoạt văn hóa cung đình, lễ hội cung đình, âm nhạc và vũ đạo cung đình, cùng các ngành nghề thủ công truyền thống...
+
+Với những giá trị lịch sử, văn hóa và khoa học đặc biệt của di tích, Thủ tướng Chính phủ đã quyết định xếp hạng Di tích lịch sử và kiến trúc nghệ thuật Quần thể kiến trúc Cố đô Huế là di tích quốc gia đặc biệt (Quyết định số 1272/QĐ-TTg, ngày 12/08/2009).
+
+**Cảnh Toàn (Theo Hồ sơ xếp hạng di tích, tư liệu Cục Di sản văn hóa)**

@@ -21,25 +21,69 @@ from pathlib import Path
 DATA_DIR = Path(__file__).parent.parent / "data" / "landing" / "news"
 
 ARTICLE_URLS = [
-    # TODO: Thêm ít nhất 5 public URL.
+    "https://dsvh.gov.vn/quan-the-di-tich-co-do-hue-475",
+    (
+        "https://dsvh.gov.vn/di-tich-lich-su-va-kien-truc-nghe-thuat-"
+        "quan-the-kien-truc-co-do-hue-2944"
+    ),
+    "https://dsvh.gov.vn/nha-nhac-am-nhac-cung-dinh-viet-nam-483",
+    "https://dsvh.gov.vn/ca-hue-1180",
+    "https://dsvh.gov.vn/tho-van-tren-kien-truc-cung-dinh-hue-1249",
 ]
 
 
 async def crawl_article(url: str) -> dict:
-    # TODO: Implement crawling logic.
-    #
-    # from datetime import datetime
-    # from crawl4ai import AsyncWebCrawler
-    #
-    # async with AsyncWebCrawler() as crawler:
-    #     result = await crawler.arun(url=url)
-    #     return {
-    #         "url": url,
-    #         "title": result.metadata.get("title", "Unknown"),
-    #         "date_crawled": datetime.now().isoformat(),
-    #         "content_markdown": result.markdown,
-    #     }
-    raise NotImplementedError("Implement crawl_article")
+    from datetime import datetime, timezone
+
+    import requests
+    from bs4 import BeautifulSoup
+    from markdownify import markdownify
+
+    def fetch() -> tuple[str, str]:
+        response = requests.get(
+            url,
+            timeout=60,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; VinUni-RAG-Lab/1.0)"},
+        )
+        response.raise_for_status()
+        response.encoding = response.apparent_encoding or response.encoding
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        for element in soup.select("script, style, noscript, nav, footer, form"):
+            element.decompose()
+
+        content = (
+            soup.select_one(".page-content")
+            or soup.select_one("[itemprop='articleBody']")
+            or soup.select_one("article")
+            or soup.select_one("main")
+        )
+        if content is None:
+            raise ValueError(f"Could not locate article body: {url}")
+
+        heading = content.find("h1") or soup.find("h1")
+        title_tag = soup.find("meta", property="og:title")
+        title = (
+            heading.get_text(" ", strip=True)
+            if heading
+            else title_tag.get("content", "").strip()
+            if title_tag
+            else soup.title.get_text(" ", strip=True)
+            if soup.title
+            else "Untitled"
+        )
+        return title, markdownify(str(content), heading_style="ATX").strip()
+
+    title, markdown = await asyncio.to_thread(fetch)
+    if len(markdown) < 200:
+        raise ValueError(f"Crawled content is too short: {url}")
+
+    return {
+        "url": url,
+        "title": title.strip(),
+        "date_crawled": datetime.now(timezone.utc).isoformat(),
+        "content_markdown": markdown,
+    }
 
 
 async def crawl_all() -> None:
@@ -56,7 +100,7 @@ async def crawl_all() -> None:
             )
             print(f"Saved: {output}")
         except Exception as error:
-            print(f"Failed: {url} — {error}")
+            print(f"Failed: {url} - {error}")
 
 
 if __name__ == "__main__":
