@@ -82,6 +82,6 @@ Tài liệu này tổng hợp việc cần làm của **cả nhóm** và phần 
 
 - [ ] Kiểm tra `git status`, file bí mật/cache, cấu trúc root, README tái lập được, demo query đúng/ngoài domain và bảng A/B. Sau khi tích hợp, cả nhóm dùng chung một URL repository để nộp lên VLearn.
 
-## Trạng thái khi lập checklist
+## Trạng thái cập nhật ngày 25/09/2026
 
-Corpus Huế và [TEAMMATES.md](../../TEAMMATES.md) đã có trong repo. Tại thời điểm đọc, Task 8–10 và `app.py` vẫn chứa placeholder/`NotImplementedError`; `group_project/evaluation/golden_dataset.json` đang rỗng và `RESULT.md` còn `TODO`. Các mục đó cần được triển khai và kiểm chứng trước khi coi project hoàn tất.
+Corpus Huế, [TEAMMATES.md](../../TEAMMATES.md), Task 8–10 và `app.py` đã có trong `main`. Trên `.venv` Python 3.13, 19 contract/test riêng cho Generation/UI đều pass. Báo cáo cá nhân của Thịnh nằm trong `reports/`; phần demo với LLM/PageIndex thật và hiệu chỉnh threshold vẫn cần cấu hình key, model và index cục bộ. `group_project/evaluation/golden_dataset.json` hiện rỗng và `RESULT.md` còn `TODO`, nên acceptance test toàn nhóm chưa pass. Xem báo cáo cá nhân để biết phần nào đã kiểm chứng và phần nào mới chuẩn bị.

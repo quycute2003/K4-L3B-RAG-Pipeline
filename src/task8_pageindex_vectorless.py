@@ -73,10 +73,25 @@ def _news_pdf(document: dict) -> Path:
     target = PDF_DIR / f"{Path(document['id']).name}.pdf"
     text = html.escape(document["content"])
     title = html.escape(document["metadata"]["title"])
-    from playwright.sync_api import sync_playwright
+    from playwright.sync_api import Error as PlaywrightError, sync_playwright
 
     with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=True)
+        try:
+            browser = playwright.chromium.launch(headless=True)
+        except PlaywrightError:
+            # A system Chromium browser can render the temporary PDFs when the
+            # Playwright browser download is unavailable on the local machine.
+            candidates = [
+                os.getenv("CHROME_EXECUTABLE", ""),
+                r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+                r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+                "/usr/bin/chromium",
+                "/usr/bin/google-chrome",
+            ]
+            executable = next((path for path in candidates if path and Path(path).is_file()), None)
+            if executable is None:
+                raise
+            browser = playwright.chromium.launch(headless=True, executable_path=executable)
         try:
             page = browser.new_page()
             page.set_content(
