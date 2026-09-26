@@ -246,9 +246,12 @@ def embed_chunks(chunks: list[dict]) -> list[dict]:
         validate_document(chunk, require_chunk=True)
 
     vectors = []
-    for start in range(0, len(chunks), EMBEDDING_BATCH_SIZE):
+    total = len(chunks)
+    for start in range(0, total, EMBEDDING_BATCH_SIZE):
         batch = chunks[start : start + EMBEDDING_BATCH_SIZE]
         vectors.extend(embed_texts([chunk["content"] for chunk in batch]))
+        current = min(start + EMBEDDING_BATCH_SIZE, total)
+        print(f"Embedding progress: {current}/{total} chunks ({current * 100 // total}%)", flush=True)
 
     _validate_vectors(vectors, len(chunks))
     return [
@@ -296,6 +299,7 @@ def index_to_vectorstore(chunks: list[dict]) -> None:
             embeddings=[chunk["embedding"] for chunk in batch],
             metadatas=metadatas,
         )
+        print(f"Upserted to ChromaDB: {min(start + UPSERT_BATCH_SIZE, len(chunks))}/{len(chunks)} chunks", flush=True)
 
 
 def run_pipeline() -> None:
